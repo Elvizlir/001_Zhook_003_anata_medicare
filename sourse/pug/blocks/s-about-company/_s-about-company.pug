@@ -1,0 +1,27 @@
+mixin s-about-company()
+	// start s-about-company
+	+b.SECTION.s-about-company.section.block-with-lazy#s-about-company&attributes(attributes)
+		.container
+			+e.row-title.row
+				+e.col-title.col-12.col-xl-3
+					+e.H2.title О компании
+					+e.A.btn.btn-main(href="#") Подробнее о компании
+				.col-12.col-xl-8
+					+e.row.row
+						+e.col-item.col-12.col-md-6
+							+e.col-text В&nbsp;разделе &laquo;Наши новинки&raquo; изложена информация о&nbsp;выведении на&nbsp;рынок новых препаратов, информация о&nbsp;получении сертификатов и&nbsp;свидетельства государственной регистрации
+							+e.A.col-btn.btn-main(href="#") Перейти
+						+e.col-item.col-12.col-md-6
+							+e.col-text В&nbsp;разделе &laquo;Средства природного происхождения&raquo; выложена полная информация по&nbsp;общей характеристики, составу и&nbsp;рекомендации по&nbsp;их&nbsp;применению.
+							+e.A.col-btn.btn-main(href="#") Перейти
+						+e.col-item.col-12.col-md-6
+							+e.col-text В&nbsp;разделе &laquo;Информация для пациентов&raquo; в&nbsp;доступной форме изложены рекомендации для пациентов с&nbsp;аллергией, простудой, гипертонией, язвенной болезнью желудка и&nbsp;12-перстной кишки, атеросклерозом...
+							+e.A.col-btn.btn-main(href="#") Перейти
+						+e.col-item.col-12.col-md-6
+							+e.col-text В&nbsp;разделе &laquo;Вакансии&raquo; предоставлена информация о&nbsp;трудоустройстве в&nbsp;нашей Компании.
+							+e.A.col-btn.btn-main(href="#") Перейти
+		+e.img-block
+			+e.IMG.image(src="img/s-about1.jpg" alt="#")
+			+e.IMG.image(src="img/s-about2.jpg" alt="#")
+			+e.IMG.image(src="img/s-about3.jpg" alt="#")
+	// end s-about-company

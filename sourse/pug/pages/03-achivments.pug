@@ -1,0 +1,48 @@
+extends layout/main.pug
+
+
+include ../blocks/s-content/_s-content.pug
+include ../blocks/s-contact/_s-contact.pug
+include ../blocks/s-slider/_s-slider.pug
+include ../blocks/s-about-company/_s-about-company.pug
+include ../blocks/s-news/_s-news.pug
+include ../blocks/s-meds/_s-meds.pug
+include ../blocks/s-information/_s-information.pug
+
+block title
+	title title
+
+block pagecontent
+	+mob-mnu()
+	+header()
+		+top-nav()
+	
+	.container
+		.title-page-block
+			+page-title("Наши награды и достижения")
+			+breadcrumb("Главная","О компании","Наши награды и достижения")
+	.company-article.second-font
+		.container
+			h2 Наши награды и достижения
+			br
+			br
+			img(src="img/achivments.jpg" alt="#" style="max-width: 450px; float: right;")
+			p Рады сообщить, что после завершения общегосударственного оценивания предприятий Украины в&nbsp;сфере внешнеэкономической деятельности &laquo;IMPORT EXPORT AWARD&raquo; наша компания вошла в&nbsp;топ 100 предприятий по&nbsp;показателям &laquo;Диверсифекация&raquo; &quot; Имортер года 2016&Prime; и&nbsp;получила золото рейтинга, а&nbsp;так&nbsp;же:
+			p
+				ul
+					li 57-е место (серебро) среди экспортеров по показателю «Диверсифекация» (тов. группа 210690)
+					li 58-е место (серебро) среди экспортеров по показателю «Диверсифекация» (тов. группа 2106)
+					li 80-е место (серебро) среди экспортеров по показателю «Диверсифекация» (тов. группа 21)
+					li 2-е место (золото) среди экспортеров по показателю «Диверсифекация» (тов. группа 210390)
+					li 7-е место (золото) среди экспортеров по показателю «Диверсифекация» (тов. группа 210690)
+			p Это, несомненно, является вклад ом&nbsp;в&nbsp;социальное и&nbsp;экономическое развитие нашей страны и&nbsp;свидетельствует о&nbsp;надёжности и&nbsp;перспективности нашей компании.
+			p Будем стремиться укреплять завоеванное высокие позиции и&nbsp;доверие!
+				
+	+share-block()
+	//- +s-slider()
+	//- +s-about-company()
+	//- +s-news()
+	//- +s-meds()
+	//- +s-information()
+	+footer()
+

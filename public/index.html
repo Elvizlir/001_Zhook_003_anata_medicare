@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>title</title>
+    <meta name="description" content="о чем страница">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, shrink-to-fit=no">
+    <meta property="og:image" content="path/to/image.jpg">
+    <link rel="shortcut icon" type="image/png" href="img/favicon/favicon.png">
+    <!-- Custom Browsers Color-->
+    <meta name="theme-color" content="#3361d8">
+    <link rel="stylesheet" href="libs/magnificPopup/magnific-popup.css">
+    <link rel="stylesheet" href="libs/slick/slick.css">
+    <link rel="stylesheet" href="css/main.min.css">
+  </head>
+  <body>
+    <div class="main-wrapper">
+      <div class="toggle-menu-mobile toggle-menu-mobile--js d-lg-none"><span></span>
+      </div>
+      <div class="menu-mobile menu-mobile--js d-lg-none">
+        <div class="toggle-menu-mobile toggle-menu-mobile--js"><span></span>
+        </div>
+        <div class="menu-mobile__inner">
+          <ul class="menu-mobile__nav d-none d-lg-block">
+            <li class="menu-mobile__item"> <a class="menu-mobile__link" href="#">Главная</a>
+            </li>
+            <li class="menu-mobile__item"> <a class="menu-mobile__link" href="#">О компании</a>
+              <ul class="sub-menu second-font">
+                <li><a class="sub-menu-link" href="#">Профиль компании</a></li>
+                <li><a class="sub-menu-link" href="#">Производство</a></li>
+                <li><a class="sub-menu-link" href="#">Наши награды и достижения</a></li>
+                <li><a class="sub-menu-link" href="#">Дипломы и благодарности</a></li>
+              </ul>
+            </li>
+            <li class="menu-mobile__item"> <a class="menu-mobile__link" href="#">Продукты</a>
+              <ul class="sub-menu second-font">
+                <li><a class="sub-menu-link" href="#">Средства природного происхождения</a></li>
+              </ul>
+            </li>
+            <li class="menu-mobile__item"> <a class="menu-mobile__link" href="#">Новости</a>
+              <ul class="sub-menu second-font">
+                <li><a class="sub-menu-link" href="#">Новости компании</a></li>
+                <li><a class="sub-menu-link" href="#">Мировые новости медицины</a></li>
+                <li><a class="sub-menu-link" href="#">Наши новинки</a></li>
+              </ul>
+            </li>
+            <li class="menu-mobile__item"> <a class="menu-mobile__link" href="#">Специалистам</a>
+              <ul class="sub-menu second-font">
+                <li><a class="sub-menu-link" href="#">Опыт применения комбинированных фитопрепаратов в лечении заболеваний дыхательных путей</a></li>
+                <li><a class="sub-menu-link" href="#">Возможности фитонейрорегуляции у пациентов с тревожно-депрессивными расстройствами, обусловленными военным стрессом</a></li>
+                <li><a class="sub-menu-link" href="#">СРАВНИТЕЛЬНОЕ ИССЛЕДОВАНИЕ ФИТОПРЕПАРАТОВ ГЕПАКЛИН И СИЛИМАРИН у больных с метаболическим синдромом и неалкогольной жировой болезнью печени</a></li>
+              </ul>
+            </li>
+            <li class="menu-mobile__item"> <a class="menu-mobile__link" href="#">Пациентам</a>
+              <ul class="sub-menu second-font">
+                <li><a class="sub-menu-link" href="#">Аллергия: что делать?</a></li>
+                <li><a class="sub-menu-link" href="#">Как облегчить простуду?</a></li>
+                <li><a class="sub-menu-link" href="#">Как спастись от головной боли</a></li>
+                <li><a class="sub-menu-link" href="#">Язва желудка. Что нужно знать ?</a></li>
+                <li><a class="sub-menu-link" href="#">Советы при переедании</a></li>
+                <li><a class="sub-menu-link" href="#">Хламидиоз – как быть?</a></li>
+                <li><a class="sub-menu-link" href="#">Болезни сердца и сосудов. Профилактика атеросклероза</a></li>
+                <li><a class="sub-menu-link" href="#">Что делать если у Вас бронхит?</a></li>
+                <li><a class="sub-menu-link" href="#">Молочница: как от нее избавиться?</a></li>
+                <li><a class="sub-menu-link" href="#">Если у Вас гипертония…</a></li>
+                <li><a class="sub-menu-link" href="#">Гонорея - древнейший враг человечества</a></li>
+                <li><a class="sub-menu-link" href="#">Путь к здоровым ногтям</a></li>
+                <li><a class="sub-menu-link" href="#">ЗАЩИТНИК ОТ АЛЛЕРГИИ</a></li>
+                <li><a class="sub-menu-link" href="#">Головная боль. Как найти управу?</a></li>
+                <li><a class="sub-menu-link" href="#">Народная мудрость о погрешностях питания</a></li>
+              </ul>
+            </li>
+            <li class="menu-mobile__item"> <a class="menu-mobile__link" href="#">Карьера</a>
+              <ul class="sub-menu second-font">
+                <li><a class="sub-menu-link" href="#">Вакансии в странах СНГ</a></li>
+              </ul>
+            </li>
+            <li class="menu-mobile__item"> <a class="menu-mobile__link" href="#">Контакты</a>
+            </li>
+          </ul>
+          <div class="text-right"></div>
+        </div>
+      </div>
+      <!--  мобильное меню-->
+      <!-- start HEADER.header-->
+      <header class="header block-with-lazy">
+        <!-- start top-nav-->
+        <div class="top-nav block-with-lazy">
+          <div class="container">
+            <div class="row">
+              <div class="col-auto"><a href="#"><img class="top-nav__header-logo" src="img/logo.png" alt="#" title=""/></a></div>
+              <div class="top-nav__main-title col d-none d-md-block">
+                <div class="top-nav__company-name">an<span>a</span>nta medicare
+                </div>
+                <div class="top-nav__slogan d-none d-lg-block">Бесконечная забота о вашем здоровье
+                </div>
+              </div>
+              <div class="top-nav__language-col col col-md-auto text-right">
+                <div class="top-nav__language-block extra-font">
+                  <div class="block">
+                    <div class="top-nav__language"><img class="top-nav__flag" src="img/lang_ru.png" alt="#" title=""/>
+                      <div class="top-nav__country-name">Россия
+                      </div>
+                    </div>
+                    <div class="form-wrap">
+                      <form>
+                        <div class="form-wrap__input-wrap form-group">
+                          <select class="form-wrap__input form-control extra-font" id="lang-select">
+                            <option class="form-wrap__language" data-description="Выберите страну"> 
+                            </option>
+                            <option class="form-wrap__language" value="0" data-description="Главная"> 
+                            </option>
+                            <option class="form-wrap__language" value="1" data-imagesrc="img/lang_ua.png" data-description="Украина"> 
+                            </option>
+                            <option class="form-wrap__language" value="2" data-imagesrc="img/lang_en.png" data-description="Великобритания">
+                            </option>
+                            <option class="form-wrap__language" value="3" data-imagesrc="img/lang_in.png" data-description="Индия"> 
+                            </option>
+                            <option class="form-wrap__language" value="4" data-imagesrc="img/lang_md.png" data-description="Молдавия"> 
+                            </option>
+                          </select>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+                <div class="top-nav__soc d-none d-sm-flex"><a class="top-nav__soc-link" href="#"><img class="top-nav__soc-img" src="img/facebook.png" alt="#" title=""/></a><a class="top-nav__soc-link" href="#"><img class="top-nav__soc-img" src="img/vk.png" alt="#" title=""/></a><a class="top-nav__soc-link" href="#"><img class="top-nav__soc-img" src="img/ok.png" alt="#" title=""/></a><a class="top-nav__soc-link" href="#"><img class="top-nav__soc-img" src="img/instagram.png" alt="#" title=""/></a><a class="top-nav__soc-link" href="#"><img class="top-nav__soc-img" src="img/google.png" alt="#" title=""/></a>
+                </div>
+              </div>
+            </div>
+            <ul class="top-nav__nav d-none d-lg-block">
+              <li class="top-nav__item"> <a class="top-nav__link" href="#">Главная</a>
+              </li>
+              <li class="top-nav__item"> <a class="top-nav__link" href="#">О компании</a>
+                <ul class="sub-menu second-font">
+                  <li><a class="sub-menu-link" href="#">Профиль компании</a></li>
+                  <li><a class="sub-menu-link" href="#">Производство</a></li>
+                  <li><a class="sub-menu-link" href="#">Наши награды и достижения</a></li>
+                  <li><a class="sub-menu-link" href="#">Дипломы и благодарности</a></li>
+                </ul>
+              </li>
+              <li class="top-nav__item"> <a class="top-nav__link" href="#">Продукты</a>
+                <ul class="sub-menu second-font">
+                  <li><a class="sub-menu-link" href="#">Средства природного происхождения</a></li>
+                </ul>
+              </li>
+              <li class="top-nav__item"> <a class="top-nav__link" href="#">Новости</a>
+                <ul class="sub-menu second-font">
+                  <li><a class="sub-menu-link" href="#">Новости компании</a></li>
+                  <li><a class="sub-menu-link" href="#">Мировые новости медицины</a></li>
+                  <li><a class="sub-menu-link" href="#">Наши новинки</a></li>
+                </ul>
+              </li>
+              <li class="top-nav__item"> <a class="top-nav__link" href="#">Специалистам</a>
+                <ul class="sub-menu second-font">
+                  <li><a class="sub-menu-link" href="#">Опыт применения комбинированных фитопрепаратов в лечении заболеваний дыхательных путей</a></li>
+                  <li><a class="sub-menu-link" href="#">Возможности фитонейрорегуляции у пациентов с тревожно-депрессивными расстройствами, обусловленными военным стрессом</a></li>
+                  <li><a class="sub-menu-link" href="#">СРАВНИТЕЛЬНОЕ ИССЛЕДОВАНИЕ ФИТОПРЕПАРАТОВ ГЕПАКЛИН И СИЛИМАРИН у больных с метаболическим синдромом и неалкогольной жировой болезнью печени</a></li>
+                </ul>
+              </li>
+              <li class="top-nav__item"> <a class="top-nav__link" href="#">Пациентам</a>
+                <ul class="sub-menu second-font">
+                  <li><a class="sub-menu-link" href="#">Аллергия: что делать?</a></li>
+                  <li><a class="sub-menu-link" href="#">Как облегчить простуду?</a></li>
+                  <li><a class="sub-menu-link" href="#">Как спастись от головной боли</a></li>
+                  <li><a class="sub-menu-link" href="#">Язва желудка. Что нужно знать ?</a></li>
+                  <li><a class="sub-menu-link" href="#">Советы при переедании</a></li>
+                  <li><a class="sub-menu-link" href="#">Хламидиоз – как быть?</a></li>
+                  <li><a class="sub-menu-link" href="#">Болезни сердца и сосудов. Профилактика атеросклероза</a></li>
+                  <li><a class="sub-menu-link" href="#">Что делать если у Вас бронхит?</a></li>
+                  <li><a class="sub-menu-link" href="#">Молочница: как от нее избавиться?</a></li>
+                  <li><a class="sub-menu-link" href="#">Если у Вас гипертония…</a></li>
+                  <li><a class="sub-menu-link" href="#">Гонорея - древнейший враг человечества</a></li>
+                  <li><a class="sub-menu-link" href="#">Путь к здоровым ногтям</a></li>
+                  <li><a class="sub-menu-link" href="#">ЗАЩИТНИК ОТ АЛЛЕРГИИ</a></li>
+                  <li><a class="sub-menu-link" href="#">Головная боль. Как найти управу?</a></li>
+                  <li><a class="sub-menu-link" href="#">Народная мудрость о погрешностях питания</a></li>
+                </ul>
+              </li>
+              <li class="top-nav__item"> <a class="top-nav__link" href="#">Карьера</a>
+                <ul class="sub-menu second-font">
+                  <li><a class="sub-menu-link" href="#">Вакансии в странах СНГ</a></li>
+                </ul>
+              </li>
+              <li class="top-nav__item"> <a class="top-nav__link" href="#">Контакты</a>
+              </li>
+            </ul>
+            <div class="search-block">
+              <button class="search-block__search" type="submit">Поиск
+              </button>
+              <div class="form-wrap">
+                <form>
+                  <div class="form-wrap__input-wrap form-group toggle-search">
+                    <label><input class="form-wrap__input form-control" type="text" placeholder="Запрос для поиска..."/>
+                    </label>
+                  </div>
+                  <!-- +e.input-wrap-->
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end top-nav-->
+      </header>
+      <!-- end HEADER.header-->
+      <!-- start s-slider-->
+      <section class="s-slider section block-with-lazy" id="s-slider">
+        <div class="s-slider__slider">
+          <div class="s-slider__item"><img class="s-slider__image" src="img/slider1.jpg" alt="#" title=""/>
+            <div class="s-slider__row row">
+              <div class="s-slider__col col d-flex align-items-end">
+                <h3 class="s-slider__col-text extra-font">Лекарственные средства
+                </h3>
+              </div>
+              <div class="s-slider__col col d-flex text-right justify-content-end">
+                <h3 class="s-slider__col-text extra-font">Средства природного происхождения
+                </h3>
+              </div>
+            </div>
+          </div>
+          <div class="s-slider__item"><img class="s-slider__image" src="img/slider2.jpg" alt="#" title=""/>
+            <div class="s-slider__row row">
+              <div class="s-slider__col col d-flex align-items-end">
+                <h3 class="s-slider__col-text extra-font">
+                </h3>
+              </div>
+              <div class="s-slider__col col d-flex text-right justify-content-end">
+                <h3 class="s-slider__col-text extra-font">
+                </h3>
+              </div>
+            </div>
+          </div>
+          <div class="s-slider__item"><img class="s-slider__image" src="img/slider3.jpg" alt="#" title=""/>
+            <div class="s-slider__row row">
+              <div class="s-slider__col col d-flex align-items-end">
+                <h3 class="s-slider__col-text extra-font">
+                </h3>
+              </div>
+              <div class="s-slider__col col d-flex text-right justify-content-end">
+                <h3 class="s-slider__col-text extra-font">Инновационные технологии производства
+                </h3>
+              </div>
+            </div>
+          </div>
+          <div class="s-slider__item"><img class="s-slider__image" src="img/slider4.jpg" alt="#" title=""/>
+            <div class="s-slider__row row">
+              <div class="s-slider__col col d-flex align-items-end">
+                <h3 class="s-slider__col-text extra-font">Выход на международный рынок
+                </h3>
+              </div>
+              <div class="s-slider__col col d-flex text-right justify-content-end">
+                <h3 class="s-slider__col-text extra-font">
+                </h3>
+              </div>
+            </div>
+          </div>
+          <div class="s-slider__item"><img class="s-slider__image" src="img/slider5.jpg" alt="#" title=""/>
+            <div class="s-slider__row row">
+              <div class="s-slider__col col d-flex align-items-end">
+                <h3 class="s-slider__col-text extra-font">
+                </h3>
+              </div>
+              <div class="s-slider__col col d-flex text-right justify-content-end">
+                <h3 class="s-slider__col-text extra-font">Широкий ассортимент продукции
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end s-slider-->
+      <!-- start s-about-company-->
+      <section class="s-about-company section block-with-lazy" id="s-about-company">
+        <div class="container">
+          <div class="s-about-company__row-title row">
+            <div class="s-about-company__col-title col-12 col-xl-3">
+              <h2 class="s-about-company__title">О компании
+              </h2><a class="s-about-company__btn btn-main" href="#">Подробнее о компании</a>
+            </div>
+            <div class="col-12 col-xl-8">
+              <div class="s-about-company__row row">
+                <div class="s-about-company__col-item col-12 col-md-6">
+                  <div class="s-about-company__col-text">В&nbsp;разделе &laquo;Наши новинки&raquo; изложена информация о&nbsp;выведении на&nbsp;рынок новых препаратов, информация о&nbsp;получении сертификатов и&nbsp;свидетельства государственной регистрации
+                  </div><a class="s-about-company__col-btn btn-main" href="#">Перейти</a>
+                </div>
+                <div class="s-about-company__col-item col-12 col-md-6">
+                  <div class="s-about-company__col-text">В&nbsp;разделе &laquo;Средства природного происхождения&raquo; выложена полная информация по&nbsp;общей характеристики, составу и&nbsp;рекомендации по&nbsp;их&nbsp;применению.
+                  </div><a class="s-about-company__col-btn btn-main" href="#">Перейти</a>
+                </div>
+                <div class="s-about-company__col-item col-12 col-md-6">
+                  <div class="s-about-company__col-text">В&nbsp;разделе &laquo;Информация для пациентов&raquo; в&nbsp;доступной форме изложены рекомендации для пациентов с&nbsp;аллергией, простудой, гипертонией, язвенной болезнью желудка и&nbsp;12-перстной кишки, атеросклерозом...
+                  </div><a class="s-about-company__col-btn btn-main" href="#">Перейти</a>
+                </div>
+                <div class="s-about-company__col-item col-12 col-md-6">
+                  <div class="s-about-company__col-text">В&nbsp;разделе &laquo;Вакансии&raquo; предоставлена информация о&nbsp;трудоустройстве в&nbsp;нашей Компании.
+                  </div><a class="s-about-company__col-btn btn-main" href="#">Перейти</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="s-about-company__img-block"><img class="s-about-company__image" src="img/s-about1.jpg" alt="#" title=""/><img class="s-about-company__image" src="img/s-about2.jpg" alt="#" title=""/><img class="s-about-company__image" src="img/s-about3.jpg" alt="#" title=""/>
+        </div>
+      </section>
+      <!-- end s-about-company-->
+      <!-- start s-news-->
+      <section class="s-news section block-with-lazy" id="s-news">
+        <div class="container">
+          <div class="s-news__title-block">
+            <h2 class="s-news__title">Новости 
+            </h2><a class="s-news__title-link" href="#">Все новости >></a>
+          </div>
+          <div class="s-news__row row">
+            <div class="col-12 col-lg-4"><span class="date">11.07.2019</span><span class="title">Provisor Club School – снова вместе!</span>
+              <p>12.06.19&nbsp;в г. Запорожье прошло второе мероприятие всеукраинского обучающего цикла для провизоров и&nbsp;фармацевтов от&nbsp;Ananta Medicare&nbsp;&mdash; Provisor Club School!</p><a class="s-news__btn btn-main" href="#">Читать далее</a>
+            </div>
+            <div class="col-12 col-lg-4"><span class="date">07.06.2019</span><span class="title">АНАНТА МЕДИКЕАР ПРИНЯЛА УЧАСТИЕ В&nbsp;НАУЧНО-ПРАКТИЧЕСКОМ СЕМИНАРЕ &laquo;МУЛЬТИДИСЦИПЛИНАРНЫЙ ПОДХОД К&nbsp;ТЕРАПИИ ВНУТРЕННИХ БОЛЕЗНЕЙ&raquo;</span>
+              <p>22&nbsp;мая 2019 года состоялся научно-практический семинар в&nbsp;формате телемоста &laquo;Мультидисциплинарный подход к&nbsp;терапии внутренних болезней&raquo;. Семинар проходил в&nbsp;Киеве, Чернигове, Черкассах и&nbsp;Кропивницком, на&nbsp;котором присутствовали врачи разных специальностей: терапевты, семейные врачи, гастроэнтерологи, кардиологи, педиатры и&nbsp;другие.</p><a class="s-news__btn btn-main" href="#">Читать далее</a>
+            </div>
+            <div class="col-12 col-lg-4"><span class="date">22.05.2019</span><span class="title">7&nbsp;мая 2019 года в&nbsp;г. Одесса ANANTA MEDICARE отпраздновала 20-ю годовщину дня рождения компании.</span>
+              <p>В&nbsp;торжественных мероприятиях приняли участие более 500 коллег и&nbsp;партнеров компании из&nbsp;Украины и&nbsp;зарубежья. Праздничную церемонию открыл лично президент компании Джаин Прадип Кумар</p><a class="s-news__btn btn-main" href="#">Читать далее</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end s-news-->
+      <!-- start s-meds-->
+      <section class="s-meds section block-with-lazy" id="s-meds">
+        <div class="s-meds__item"><img class="s-meds__image" src="img/s-meds1.jpg" alt="#" title=""/>
+          <div class="container">
+            <div class="s-meds__main-row row">
+              <div class="s-meds__main-block col-12 col-md-10">
+                <div class="s-meds__block">
+                  <div class="s-meds__title"><a href="#">лекарственные средства</a>
+                  </div>
+                </div>
+                <div class="s-meds__list row">
+                  <div class="s-meds__list-item col-12 col-md-6 col-xl-4"><a href="#">Антибактериальные препараты</a>
+                  </div>
+                  <div class="s-meds__list-item col-12 col-md-6 col-xl-4"><a href="#">Антигипертензивные препараты</a>
+                  </div>
+                  <div class="s-meds__list-item col-12 col-md-6 col-xl-4"><a href="#">Антидиабетические препараты</a>
+                  </div>
+                  <div class="s-meds__list-item col-12 col-md-6 col-xl-4"><a href="#">Антинеопластические средства</a>
+                  </div>
+                  <div class="s-meds__list-item col-12 col-md-6 col-xl-4"><a href="#">Антисекреторные препараты</a>
+                  </div>
+                  <div class="s-meds__list-item col-12 col-md-6 col-xl-4"><a href="#">Антитромботические препараты</a>
+                  </div>
+                  <div class="s-meds__list-item col-12 col-md-6 col-xl-4"><a href="#">Гиполипидемические препараты</a>
+                  </div>
+                  <div class="s-meds__list-item col-12 col-md-6 col-xl-4"><a href="#">Нестероидные противовоспалительные средства</a>
+                  </div>
+                  <div class="s-meds__list-item col-12 col-md-6 col-xl-4"><a href="#">Противоаллергические препараты</a>
+                  </div>
+                  <div class="s-meds__list-item col-12 col-md-6 col-xl-4"><a href="#">Противоглаукомные и миотические средства</a>
+                  </div>
+                  <div class="s-meds__list-item col-12 col-md-6 col-xl-4"><a href="#">Противогрибковые препараты</a>
+                  </div>
+                  <div class="s-meds__list-item col-12 col-md-6 col-xl-4"><a href="#">Противопростудные средства</a>
+                  </div>
+                  <div class="s-meds__list-item col-12 col-md-6 col-xl-4"><a href="#">Спазмолитики</a>
+                  </div>
+                  <div class="s-meds__list-item col-12 col-md-6 col-xl-4"><a href="#">Средства применяемые при эректильной дисфункции</a>
+                  </div>
+                  <div class="s-meds__list-item col-12 col-md-6 col-xl-4"><a href="#">Стимуляторы перистальтики (пропульсанты)</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="s-meds__item"><img class="s-meds__image" src="img/s-meds2.jpg" alt="#" title=""/>
+          <div class="container">
+            <div class="s-meds__main-row row">
+              <div class="s-meds__main-block col-12 col-md-10">
+                <div class="s-meds__title"><a href="#">Средства природного происхождения</a>
+                </div>
+                <div class="s-meds__list row">
+                  <div class="s-meds__list-item col-12 col-md-6 col-xl-4"><a href="#">Адриус</a>
+                  </div>
+                  <div class="s-meds__list-item col-12 col-md-6 col-xl-4"><a href="#">Анантавати</a>
+                  </div>
+                  <div class="s-meds__list-item col-12 col-md-6 col-xl-4"><a href="#">Анантавати Кидс</a>
+                  </div>
+                  <div class="s-meds__list-item col-12 col-md-6 col-xl-4"><a href="#">АРТИКОН®</a>
+                  </div>
+                  <div class="s-meds__list-item col-12 col-md-6 col-xl-4"><a href="#">БОРОСАН</a>
+                  </div>
+                  <div class="s-meds__list-item col-12 col-md-6 col-xl-4"><a href="#">Бьютисан дринк</a>
+                  </div>
+                  <div class="s-meds__list-item col-12 col-md-6 col-xl-4"><a href="#">Бьютисан стик</a>
+                  </div>
+                  <div class="s-meds__list-item col-12 col-md-6 col-xl-4"><a href="#">ГАММА КОМБО</a>
+                  </div>
+                  <div class="s-meds__list-item col-12 col-md-6 col-xl-4"><a href="#">Гамма леденцы от кашля</a>
+                  </div>
+                  <div class="s-meds__list-item col-12 col-md-6 col-xl-4"><a href="#">ГАММА Мазь</a>
+                  </div>
+                  <div class="s-meds__list-item col-12 col-md-6 col-xl-4"><a href="#">Гамма сироп</a>
+                  </div>
+                  <div class="s-meds__list-item col-12 col-md-6 col-xl-4"><a href="#">Гамма сироп без сахара</a>
+                  </div>
+                  <div class="s-meds__list-item col-12 col-md-6 col-xl-4"><a href="#">Гепаклин®</a>
+                  </div>
+                  <div class="s-meds__list-item col-12 col-md-6 col-xl-4"><a href="#">Гинкго Билоба АНAНTA 40, 80, 120</a>
+                  </div>
+                  <div class="s-meds__list-item col-12 col-md-6 col-xl-4"><a href="#">Глибофит</a>
+                  </div>
+                  <div class="s-meds__list-item col-12 col-md-6 col-xl-4"><a href="#">Интинова</a>
+                  </div>
+                  <div class="s-meds__list-item col-12 col-md-6 col-xl-4"><a href="#">Лактофор®</a>
+                  </div>
+                  <div class="s-meds__list-item col-12 col-md-6 col-xl-4"><a href="#">Лизостон</a>
+                  </div>
+                  <div class="s-meds__list-item col-12 col-md-6 col-xl-4"><a href="#">Лотарди</a>
+                  </div>
+                  <div class="s-meds__list-item col-12 col-md-6 col-xl-4"><a href="#">Мемостим</a>
+                  </div>
+                  <div class="s-meds__list-item col-12 col-md-6 col-xl-4"><a href="#">Нокамен®</a>
+                  </div>
+                  <div class="s-meds__list-item col-12 col-md-6 col-xl-4"><a href="#">Сантижен</a>
+                  </div>
+                  <div class="s-meds__list-item col-12 col-md-6 col-xl-4"><a href="#">Сенадексин Ананта</a>
+                  </div>
+                  <div class="s-meds__list-item col-12 col-md-6 col-xl-4"><a href="#">Сироп Алтейка Ананта</a>
+                  </div>
+                  <div class="s-meds__list-item col-12 col-md-6 col-xl-4"><a href="#">Сироп корня Солодки</a>
+                  </div>
+                  <div class="s-meds__list-item col-12 col-md-6 col-xl-4"><a href="#">Файболекс</a>
+                  </div>
+                  <div class="s-meds__list-item col-12 col-md-6 col-xl-4"><a href="#">Фемименс</a>
+                  </div>
+                  <div class="s-meds__list-item col-12 col-md-6 col-xl-4"><a href="#">Фемицикл</a>
+                  </div>
+                  <div class="s-meds__list-item col-12 col-md-6 col-xl-4"><a href="#">Флориум</a>
+                  </div>
+                  <div class="s-meds__list-item col-12 col-md-6 col-xl-4"><a href="#">ХОЛИКС</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end s-meds-->
+      <!-- start s-information-->
+      <section class="s-information section block-with-lazy" id="s-information">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-xl-3">
+              <h2 class="s-information__title">Информация для пациентов
+              </h2>
+            </div>
+            <div class="col-9">
+              <div class="s-information__list row">
+                <div class="s-information__item col-12 col-md-6 col-lg-4"><a class="second-font" href="#">Аллергия: что делать?</a>
+                </div>
+                <div class="s-information__item col-12 col-md-6 col-lg-4"><a class="second-font" href="#">Болезни сердца и сосудов. Профилактика атеросклероза</a>
+                </div>
+                <div class="s-information__item col-12 col-md-6 col-lg-4"><a class="second-font" href="#">Головная боль. Как найти управу?</a>
+                </div>
+                <div class="s-information__item col-12 col-md-6 col-lg-4"><a class="second-font" href="#">Гонорея - древнейший враг человечества</a>
+                </div>
+                <div class="s-information__item col-12 col-md-6 col-lg-4"><a class="second-font" href="#">Если у Вас гипертония…</a>
+                </div>
+                <div class="s-information__item col-12 col-md-6 col-lg-4"><a class="second-font" href="#">ЗАЩИТНИК ОТ АЛЛЕРГИИ</a>
+                </div>
+                <div class="s-information__item col-12 col-md-6 col-lg-4"><a class="second-font" href="#">Как облегчить простуду?</a>
+                </div>
+                <div class="s-information__item col-12 col-md-6 col-lg-4"><a class="second-font" href="#">Как спастись от головной боли</a>
+                </div>
+                <div class="s-information__item col-12 col-md-6 col-lg-4"><a class="second-font" href="#">Молочница: как от нее избавиться?</a>
+                </div>
+                <div class="s-information__item col-12 col-md-6 col-lg-4"><a class="second-font" href="#">Народная мудрость о погрешностях питания</a>
+                </div>
+                <div class="s-information__item col-12 col-md-6 col-lg-4"><a class="second-font" href="#">Путь к здоровым ногтям</a>
+                </div>
+                <div class="s-information__item col-12 col-md-6 col-lg-4"><a class="second-font" href="#">Советы при переедании</a>
+                </div>
+                <div class="s-information__item col-12 col-md-6 col-lg-4"><a class="second-font" href="#">Хламидиоз – как быть?</a>
+                </div>
+                <div class="s-information__item col-12 col-md-6 col-lg-4"><a class="second-font" href="#">Что делать если у Вас бронхит?</a>
+                </div>
+                <div class="s-information__item col-12 col-md-6 col-lg-4"><a class="second-font" href="#">Язва желудка. Что нужно знать ?</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end s-information-->
+      <footer class="footer block-with-lazy second-font">
+        <div class="container">
+          <h5 class="footer__title">Контактная информация
+          </h5>
+          <div class="row">
+            <div class="footer__item col-12 col-xl-3">
+              <p><span>EU:</span> Suite 1, 2 Station Court, Imperial Wharf, Townmead Road, Fulham, London, SW6 2PY, United Kingdom</p>
+              <p>tel.: <a href="tel:+442073719666"> + 442073719666</a></p>
+              <p>e-mail: <a href="mailto:office@anantamedicare.co.uk">office@anantamedicare.co.uk</a></p>
+            </div>
+            <div class="footer__item col-12 col-xl-3">
+              <p><span>India:</span> 621, Ring Road Mall, Sector-3, Rohini, Delhi-110085, India,</p>
+              <p>tel.: <a href="tel:+911147050531"> + 911147050531</a></p>
+              <p>e-mail: <a href="mailto:info@anantamedicare.in">info@anantamedicare.in</a></p>
+            </div>
+            <div class="footer__item col-12 col-xl-3">
+              <p><span>CIS:</span> Ул. Искринская, 37, г. Харьков, Украина, 61001,</p>
+              <p>tel.: <a href="tel:+38(057)739-03-00"> +38 (057) 739-03-00</a></p>
+              <p>e-mail: <a href="mailto:office@anantamedicare.com">office@anantamedicare.com</a></p>
+            </div>
+            <div class="footer__item col-12 col-xl-3">
+              <div class="footer__soc-block"><a href="#"> <img class="footer__soc-img" src="img/facebook.png" alt="#" title=""/></a><a href="#"> <img class="footer__soc-img" src="img/vk.png" alt="#" title=""/></a><a href="#"> <img class="footer__soc-img" src="img/ok.png" alt="#" title=""/></a><a href="#"> <img class="footer__soc-img" src="img/instagram.png" alt="#" title=""/></a><a href="#"> <img class="footer__soc-img" src="img/google.png" alt="#" title=""/></a>
+              </div>
+            </div>
+          </div>
+          <div class="footer__copyright-block">
+            <p>Copyright © 2007 — 2019 Ananta Medicare Ltd. Все права защищены. Материалы, отмеченные знаком ® публикуются на правах рекламы <br>Разработка сайта - <a href="#">seozavr.com</a></p><a class="footer__feedback" href="mailto:beauty@anantamedicare.com">Обратная связь</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <div class="form-wrap zoom-anim-dialog mfp-hide modal-win modal-form" id="modal-call">
+      <form>
+        <div class="text-center">
+          <div class="form-wrap__title h3 ttu">Обратный звонок
+          </div>
+          <p>Заполните заявку и&nbsp;мы&nbsp;с&nbsp;Вами свяжемся в&nbsp;течении 15&nbsp;минут</p>
+        </div>
+        <div class="form-wrap__input-wrap form-group text">
+          <label><input class="form-wrap__input form-control" type="Ваше Имя" required="required"/>
+          </label>
+        </div>
+        <!-- +e.input-wrap-->
+        <div class="form-wrap__input-wrap form-group tel">
+          <label><input class="form-wrap__input form-control" type="Ваш телефон" required="required"/>
+          </label>
+        </div>
+        <!-- +e.input-wrap--><input class="form-wrap__btn btn btn-block btn-warning mb-4" type="submit" value="Рассчитать"/>
+        <div class="form-wrap__polite">
+          <label class="custom-input"><input class="custom-input__input" type="checkbox" checked="checked"/><span class="custom-input__lab"></span><small class="custom-input__text text-secondary">Согласен на обработку и хранение моих персональных данных в соответствии с условиями</small>
+          </label>
+        </div>
+      </form>
+    </div>
+    <!-- #modal-call-->
+    <!-- modal-->
+    <script src="js/jquery.min.js"></script>
+    <!-- modal libs-->
+    <script src="libs/magnificPopup/jquery.magnific-popup.min.js"></script>
+    <!-- modal libs-->
+    <!-- slider libs-->
+    <script src="libs/slick/slick.min.js"></script>
+    <!-- /slider libs-->
+    <!-- for svg libs-->
+    <script src="libs/svg4everybody-master/svg4everybody.min.js"></script>
+    <!-- /for svg libs-->
+    <script src="libs/jquery.touchSwipe.min.js"></script>
+    <script src="libs/jquery.inputmask.bundle.min.js"></script>
+    <script src="libs/jquery.ddslick.min.js"></script>
+    <script src="js/common.js"></script>
+  </body>
+</html>

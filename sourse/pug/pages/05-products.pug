@@ -1,0 +1,44 @@
+extends layout/main.pug
+
+
+include ../blocks/s-content/_s-content.pug
+include ../blocks/s-contact/_s-contact.pug
+include ../blocks/s-slider/_s-slider.pug
+include ../blocks/s-about-company/_s-about-company.pug
+include ../blocks/s-news/_s-news.pug
+include ../blocks/s-meds/_s-meds.pug
+include ../blocks/s-information/_s-information.pug
+
+block title
+	title title
+
+block pagecontent
+	+mob-mnu()
+	+header()
+		+top-nav()
+	
+	.container
+		.title-page-block
+			+page-title("Продукты")
+			+breadcrumb("Главная","Продукты")
+		.title-page-block
+			+page-subtitle("Средства природного происхождения")
+			h2 Продукты
+	.container
+		.row.justify-content-end
+			.col.col-lg-9
+				.row
+					a.product-item.col-12.col-sm-6.col-lg-4(href="#")
+						img(src="img/prirodny-1e-200x200-8d8.jpg" alt="#")
+						h5 Средства природного происхождения
+						span В&nbsp;разделе &laquo;Средства природного происхождения&raquo; выложена полная информация по&nbsp;общей характеристики, составу и&nbsp;рекомендации по&nbsp;их&nbsp;применению.
+			
+				
+	+share-block()
+	//- +s-slider()
+	//- +s-about-company()
+	//- +s-news()
+	//- +s-meds()
+	//- +s-information()
+	+footer()
+

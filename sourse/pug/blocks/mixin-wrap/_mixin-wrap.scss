@@ -1,0 +1,125 @@
+ 
+	  
+.soc{
+	margin: 0 -5px;
+	&__item{
+		display: inline-block;
+		text-decoration: none !important;
+		margin: 0 5px;
+		vertical-align: middle;
+		@include mt;
+		&:hover{
+		 	// box-shadow: 0 0 33px 0px rgba(255, 83, 0, 0.16);
+			opacity: .6 ;
+		}
+	}
+	svg{
+		width: 31px;
+		height: 31px;
+	}
+	 
+
+}
+ 
+
+.counter{
+	counter-reset: num;
+	&__item {
+		position: relative; 
+		&::before {
+			content: counter(num);
+			counter-increment: num;
+		}
+	}
+}
+
+.page-title{
+	margin-right: rem(30);
+	background-color: $primary;
+	padding: rem(20) 0 rem(20) 0;
+	position: relative;
+	width: rem(270);
+	@include media-breakpoint-down(xs) {
+		padding-right: rem(35);
+	}
+	&__title{
+		font-size: rem(19);
+		text-transform: uppercase;
+		color: #fff;
+		font-weight: 700;
+		line-height: 1.42;
+	}
+	&::before{
+		content: '';
+    position: absolute;
+    top: 0;
+    width: 5000px;
+    height: 100%;
+    right: 100%;
+    background-color: #f38624;
+	}
+}
+#page-subtitle{
+	background-color: #f3f3f3;
+	padding: rem(26) rem(26) rem(26) 0;
+	.page-title__title{
+		color: #5c9ab6;
+		font-size: rem(19);
+		letter-spacing: 2;
+		font-weight: 600;
+		text-transform: unset;
+		line-height: rem(20);
+	}
+	&::before{
+		background-color: #f3f3f3;
+	}
+}
+
+.breadcrumb{
+	font-size: rem(14);
+	a{
+		color: #b5b5b5;
+		&::after{
+			content: '';
+			display: inline-block;
+			vertical-align: top;
+			width: 7px;
+			height: 7px;
+			border-bottom: 1px solid #fd8320;
+			border-right: 1px solid #fd8320;
+			transform: rotate(-45deg);
+			margin: 8px;
+		}
+	}
+	span{
+		color: #5c9ab6;
+	}
+	@include media-breakpoint-down(sm) {
+		margin-top: rem(15);
+		margin-bottom: rem(15);
+	}
+}
+
+.share-block{
+	display: flex;
+	align-items: center;
+	padding: rem(70) 0 rem(30);
+	@include media-breakpoint-down(md) {
+		padding: rem(35) 0 rem(30);
+	}
+	&__text{
+		margin-right: rem(50);
+		color: #b5b5b5;
+		@include media-breakpoint-down(sm) {
+			margin-right: rem(20);
+		}
+	}
+	&__link{
+		&:not(:last-child){
+			margin-right: rem(30);
+			@include media-breakpoint-down(sm) {
+				margin-right: rem(15);
+			}
+		}
+	}
+}

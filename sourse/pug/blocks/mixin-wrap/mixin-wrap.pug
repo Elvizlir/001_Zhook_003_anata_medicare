@@ -1,0 +1,172 @@
+mixin icon(name,mod)
+	- mod = mod || ''
+	svg(class="icon icon-" + name + ' ' + mod)
+		use(xlink:href="img/svg/sprite.svg#" + name)
+
+
+
+mixin breadcrumb(...items)
+	nav.breadcrumb
+		-for (var i = 0; i < items.length - 1; i++)
+			a.breadcrumb-item(href='#')= items[i]
+		span.breadcrumb-item.active=  items[items.length - 1]
+
+		
+mixin pugin()
+	nav(aria-label='...')
+		ul.pagination.justify-content-center
+			li.page-item.disabled
+				a.page-link(href='#', tabindex='-1') 
+					i(class="fas fa-chevron-left")
+			li.page-item.disabled
+				a.page-link.d-none.d-md-block(href='#', tabindex='-1') Назад
+
+			li.page-item
+				a.page-link(href='#') 1
+			li.page-item.active
+				a.page-link(href='#')
+					| 2 
+					span.sr-only (current)
+			li.page-item
+				a.page-link.page-link-more(href='#') ...
+			li.page-item
+				a.page-link(href='#') 3
+
+			li.page-item
+				a.page-link.d-none.d-md-block(href='#') Дальше
+			li.page-item
+				a.page-link(href='#') 
+					i(class="fas fa-chevron-right")
+//- h2.yel(class="  wow fadeInUp animated " data-wow-offset="120" data-wow-duration="1.2s")  
+mixin arrow()
+	.swiper-button-hand.swiper-button-hand-next.swiper-button-next
+		+icon('chevron-right')
+	.swiper-button-hand.swiper-button-hand-prev.swiper-button-prev
+		+icon('chevron-left')
+		
+ 
+mixin soc()
+	+b.soc
+		mixin item()
+			+e.A.item(href="" target="_blank"): i(class="fab")&attributes(attributes)
+		+item()(class="fa-twitter")
+		+item()(class="fa-facebook")
+		+item()(class="fa-google-plus")
+//- WP menu
+//- mixin mnu()
+//- 	- var nav= { "Наши работы":"#","Цены":"#","Калькулятор":"#","Акции":"#" ,"Заказать":"#"}
+//- 	ul.menu
+//- 		li.menu-item.menu-item-has-children
+//- 			a(href="#") О нас
+//- 			ul.sub-menu
+//- 				li.menu-item: a(href="#") Строительство загородных домов
+//- 				li.menu-item: a(href="#") Отделка загородных домов
+//- 				li.menu-item: a(href="#") Покраска деревянных домов
+//- 				li.menu-item: a(href="#") Штукатурные фасады загородных домов
+//- 		each linkPatch, linkName in nav
+//- 			li.menu-item: a(href="#")= linkName
+
+mixin mnu()
+	//- - var nav= {"Главная ":"#","О компании ":"#","Продукты ":"#","Новости ":"#"," Специалистам  ":"#","Пациентам ":"#"," Карьера  ":"#","Контакты ":"#"}
+	+e.UL.nav.d-none.d-lg-block
+		//- each linkPatch, linkName in nav
+		+e.LI.item 
+			+e.A.link(href="#") Главная
+		+e.LI.item 
+			+e.A.link(href="#") О компании
+			ul.sub-menu.second-font
+				li
+					a.sub-menu-link(href="#") Профиль компании
+				li
+					a.sub-menu-link(href="#") Производство
+				li
+					a.sub-menu-link(href="#") Наши награды и достижения
+				li
+					a.sub-menu-link(href="#") Дипломы и благодарности
+		+e.LI.item 
+			+e.A.link(href="#") Продукты
+			ul.sub-menu.second-font
+				li
+					a.sub-menu-link(href="#") Средства природного происхождения
+		+e.LI.item 
+			+e.A.link(href="#") Новости
+			ul.sub-menu.second-font
+				li
+					a.sub-menu-link(href="#") Новости компании
+				li
+					a.sub-menu-link(href="#") Мировые новости медицины
+				li
+					a.sub-menu-link(href="#") Наши новинки
+		+e.LI.item 
+			+e.A.link(href="#") Специалистам
+			ul.sub-menu.second-font
+				li
+					a.sub-menu-link(href="#") Опыт применения комбинированных фитопрепаратов в лечении заболеваний дыхательных путей
+				li
+					a.sub-menu-link(href="#") Возможности фитонейрорегуляции у пациентов с тревожно-депрессивными расстройствами, обусловленными военным стрессом
+				li
+					a.sub-menu-link(href="#") СРАВНИТЕЛЬНОЕ ИССЛЕДОВАНИЕ ФИТОПРЕПАРАТОВ ГЕПАКЛИН И СИЛИМАРИН у больных с метаболическим синдромом и неалкогольной жировой болезнью печени
+		+e.LI.item 
+			+e.A.link(href="#") Пациентам
+			ul.sub-menu.second-font
+				li
+					a.sub-menu-link(href="#") Аллергия: что делать?
+				li
+					a.sub-menu-link(href="#") Как облегчить простуду?
+				li
+					a.sub-menu-link(href="#") Как спастись от головной боли
+				li
+					a.sub-menu-link(href="#") Язва желудка. Что нужно знать ?
+				li
+					a.sub-menu-link(href="#") Советы при переедании
+				li
+					a.sub-menu-link(href="#") Хламидиоз – как быть?
+				li
+					a.sub-menu-link(href="#") Болезни сердца и сосудов. Профилактика атеросклероза
+				li
+					a.sub-menu-link(href="#") Что делать если у Вас бронхит?
+				li
+					a.sub-menu-link(href="#") Молочница: как от нее избавиться?
+				li
+					a.sub-menu-link(href="#") Если у Вас гипертония…
+				li
+					a.sub-menu-link(href="#") Гонорея - древнейший враг человечества
+				li
+					a.sub-menu-link(href="#") Путь к здоровым ногтям
+				li
+					a.sub-menu-link(href="#") ЗАЩИТНИК ОТ АЛЛЕРГИИ
+				li
+					a.sub-menu-link(href="#") Головная боль. Как найти управу?
+				li
+					a.sub-menu-link(href="#") Народная мудрость о погрешностях питания
+		+e.LI.item 
+			+e.A.link(href="#") Карьера
+			ul.sub-menu.second-font
+				li
+					a.sub-menu-link(href="#") Вакансии в странах СНГ
+		+e.LI.item 
+			+e.A.link(href="#") Контакты
+
+
+mixin page-title(t)
+	+b.page-title
+			+e.title=t
+
+mixin page-subtitle(t)
+	+b.page-title#page-subtitle
+			+e.title.second-font=t
+
+
+mixin share-block()
+	.container
+		+b.share-block
+			+e.text поделиться:
+			+e.soc-block
+				+e.A.link(href="#")
+					+e.IMG.soc-image(src="img/facebook.png" alt="#")
+				+e.A.link(href="#")
+					+e.IMG.soc-image(src="img/vk.png" alt="#")
+				+e.A.link(href="#")
+					+e.IMG.soc-image(src="img/ok.png" alt="#")
+				+e.A.link(href="#")
+					+e.IMG.soc-image(src="img/instagram.png" alt="#")

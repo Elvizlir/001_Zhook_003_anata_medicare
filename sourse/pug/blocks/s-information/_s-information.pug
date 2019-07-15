@@ -1,0 +1,28 @@
+mixin s-information()
+	// start s-information
+	+b.SECTION.s-information.section.block-with-lazy#s-information&attributes(attributes)
+		mixin inf-link(l, n)
+			+e.item.col-12.col-md-6.col-lg-4
+				a.second-font(href=l)=n 
+		.container
+			.row
+				.col-12.col-xl-3
+					+e.H2.title Информация для пациентов
+				.col-9
+					+e.list.row
+						+inf-link("#","Аллергия: что делать?")
+						+inf-link("#","Болезни сердца и сосудов. Профилактика атеросклероза")
+						+inf-link("#","Головная боль. Как найти управу?")
+						+inf-link("#","Гонорея - древнейший враг человечества")
+						+inf-link("#","Если у Вас гипертония…")
+						+inf-link("#","ЗАЩИТНИК ОТ АЛЛЕРГИИ")
+						+inf-link("#","Как облегчить простуду?")
+						+inf-link("#","Как спастись от головной боли")
+						+inf-link("#","Молочница: как от нее избавиться?")
+						+inf-link("#","Народная мудрость о погрешностях питания")
+						+inf-link("#","Путь к здоровым ногтям")
+						+inf-link("#","Советы при переедании")
+						+inf-link("#","Хламидиоз – как быть?")
+						+inf-link("#","Что делать если у Вас бронхит?")
+						+inf-link("#","Язва желудка. Что нужно знать ?")
+	// end s-information
