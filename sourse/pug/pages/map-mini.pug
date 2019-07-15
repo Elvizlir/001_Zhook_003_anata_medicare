@@ -1,0 +1,31 @@
+extends layout/main.pug
+
+
+include ../blocks/s-content/_s-content.pug
+include ../blocks/s-contact/_s-contact.pug
+include ../blocks/s-slider/_s-slider.pug
+include ../blocks/s-about-company/_s-about-company.pug
+include ../blocks/s-news/_s-news.pug
+include ../blocks/s-meds/_s-meds.pug
+include ../blocks/s-information/_s-information.pug
+
+block title
+	title title
+
+block pagecontent
+	ul
+		li
+			a(href="index.html") главная
+		li
+			a(href="01-about-company.html") о компании
+		li
+			a(href="02-production.html") производство
+		li
+			a(href="03-achivments.html") достижения
+		li
+			a(href="04-diplomas.html") дипломы
+		li
+			a(href="05-products.html") продукция
+		li
+			a(href="06-products-natural.html") продукция на натурале
+
