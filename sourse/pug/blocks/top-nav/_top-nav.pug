@@ -2,12 +2,97 @@
 mixin mob-mnu()
 	+b.toggle-menu-mobile--js.d-lg-none
 		span
-	+b.menu-mobile--js.d-lg-none
+	+b.menu-mobile--js.d-lg-none.active
 		+b.toggle-menu-mobile--js
 			span
 		+e.inner
+			+e.UL.list-nav#accordeon
+				+e.LI.item-nav
+					+e.A.item-link(href="#") Главная
+				+e.LI.item-nav
+					+e.A.item-link(href="#") О компании
+					+e.toggler ⮞
+					+e.UL.list-subnav
+						+e.LI.item-subnav
+							+e.A.item-sublink(href="#") Профиль компании
+						+e.LI.item-subnav
+							+e.A.item-sublink(href="#") Производство
+						+e.LI.item-subnav
+							+e.A.item-sublink(href="#") Наши награды и достижения
+						+e.LI.item-subnav
+							+e.A.item-sublink(href="#") Дипломы и благодарности
+				+e.LI.item-nav
+					+e.A.item-link(href="#") Продукты
+					+e.toggler ⮞
+					+e.UL.list-subnav
+						+e.LI.item-subnav
+							+e.A.item-sublink(href="#") Средства природного происхождения
+				+e.LI.item-nav
+					+e.A.item-link(href="#") Новости
+					+e.toggler ⮞
+					+e.UL.list-subnav
+						+e.LI.item-subnav
+							+e.A.item-sublink(href="#") Новости компании
+						+e.LI.item-subnav
+							+e.A.item-sublink(href="#") Мировые новости медицины
+						+e.LI.item-subnav
+							+e.A.item-sublink(href="#") Наши новинки
+				+e.LI.item-nav
+					+e.A.item-link(href="#") Специалистам
+					+e.toggler ⮞
+					+e.UL.list-subnav
+						+e.LI.item-subnav
+							+e.A.item-sublink(href="#") Опыт применения комбинированных фитопрепаратов в лечении заболеваний дыхательных путей
+						+e.LI.item-subnav
+							+e.A.item-sublink(href="#") Возможности фитонейрорегуляции у пациентов с тревожно-депрессивными расстройствами, обусловленными военным стрессом
+						+e.LI.item-subnav
+							+e.A.item-sublink(href="#") СРАВНИТЕЛЬНОЕ ИССЛЕДОВАНИЕ ФИТОПРЕПАРАТОВ ГЕПАКЛИН И СИЛИМАРИН у больных с метаболическим синдромом и неалкогольной жировой болезнью печени
+				+e.LI.item-nav
+					+e.A.item-link(href="#") Пациентам
+					+e.toggler ⮞
+					+e.UL.list-subnav
+						+e.LI.item-subnav
+							+e.A.item-sublink(href="#") Аллергия: что делать?
+						+e.LI.item-subnav
+							+e.A.item-sublink(href="#") Как облегчить простуду?
+						+e.LI.item-subnav
+							+e.A.item-sublink(href="#") Как спастись от головной боли
+						+e.LI.item-subnav
+							+e.A.item-sublink(href="#") Язва желудка. Что нужно знать ?
+						+e.LI.item-subnav
+							+e.A.item-sublink(href="#") Советы при переедании
+						+e.LI.item-subnav
+							+e.A.item-sublink(href="#") Хламидиоз – как быть?
+						+e.LI.item-subnav
+							+e.A.item-sublink(href="#") Болезни сердца и сосудов. Профилактика атеросклероза
+						+e.LI.item-subnav
+							+e.A.item-sublink(href="#") Что делать если у Вас бронхит?
+						+e.LI.item-subnav
+							+e.A.item-sublink(href="#") Молочница: как от нее избавиться?
+						+e.LI.item-subnav
+							+e.A.item-sublink(href="#") Если у Вас гипертония…
+						+e.LI.item-subnav
+							+e.A.item-sublink(href="#") Гонорея - древнейший враг человечества
+						+e.LI.item-subnav
+							+e.A.item-sublink(href="#") Путь к здоровым ногтям
+						+e.LI.item-subnav
+							+e.A.item-sublink(href="#") ЗАЩИТНИК ОТ АЛЛЕРГИИ
+						+e.LI.item-subnav
+							+e.A.item-sublink(href="#") Головная боль. Как найти управу?
+						+e.LI.item-subnav
+							+e.A.item-sublink(href="#") Народная мудрость о погрешностях питания
+				+e.LI.item-nav
+					+e.A.item-link(href="#") Карьера
+					+e.toggler ⮞
+					+e.UL.list-subnav
+						+e.LI.item-subnav
+							+e.A.item-sublink(href="#") Вакансии в странах СНГ
+				+e.LI.item-nav
+					+e.A.item-link(href="#") Контакты
+
+			
 		
-			+mnu()
+			//- +mnu()
 			.text-right
 	//  мобильное меню
 mixin top-nav() 
@@ -15,7 +100,7 @@ mixin top-nav()
 	+b.top-nav.block-with-lazy
 		.container
 			.row
-				.col-auto
+				.col-auto.d-flex.d-sm-block.align-items-center
 					a(href="#")
 						+e.IMG.header-logo(src="img/logo.png" alt="#")
 				+e.main-title.col.d-none.d-md-block

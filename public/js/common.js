@@ -41,6 +41,17 @@ jQuery(document).ready(function ($) {
 	// / закрыть меню при горизонтальном свайпе
 	// /закрыть/открыть мобильное меню
 
+
+	$("#instruction-open").click(function(){
+		$("#instruction-open").addClass("disabled-class");
+		$("#instruction-close").removeClass("disabled-class");
+		$("#instruction-block").addClass("active-class");
+	});
+	$("#instruction-close").click(function(){
+		$("#instruction-close").addClass("disabled-class");
+		$("#instruction-open").removeClass("disabled-class");
+		$("#instruction-block").removeClass("active-class");
+	});
 	
 
 	function heightses() {
@@ -299,6 +310,27 @@ JSCCommon = {
 			mainClass: 'my-mfp-zoom-in',
 			tClose: 'Закрыть (Esc)',
 		});
+		if($("div").is("#modal-warning")){
+			$.magnificPopup.open({
+				items: {
+					src: $('#modal-warning')
+				},
+				type: 'inline',
+	
+				fixedContentPos: true,
+				fixedBgPos: true,
+	
+				overflowY: 'auto',
+	
+				closeBtnInside: true,
+				preloader: false,
+	
+				midClick: true,
+				removalDelay: 300,
+				mainClass: 'my-mfp-zoom-in',
+				tClose: 'Закрыть (Esc)',
+			});
+		}
 
 		// / modal window
 
@@ -456,3 +488,27 @@ $(document).ready(function(){
 	$(".toggle-search").addClass('search-active');
 	});
  });
+
+ jQuery(document).mouseup(function (e){
+         
+	var div = jQuery(".search-active");
+		
+	if (!div.is(e.target)
+			&& div.has(e.target).length === 0 
+			&& div.find('input:focus').length === 0 ) {
+					jQuery(".search-active").removeClass('search-active');
+	}
+});
+
+$(document).ready(function() {
+	$('#accordeon .menu-mobile__toggler').on('click', f_acc);
+});
+
+function f_acc(){
+	//$('#accordeon .ac-body').slideUp(1000);
+	$('#accordeon .menu-mobile__list-subnav').not($(this).next()).slideUp(500);
+	$(this).next().slideToggle(500);
+	$('#accordeon .menu-mobile__toggler')
+	$(this).toggleClass("rotate-toggler");
+	$('#accordeon .menu-mobile__toggler').not($(this)).removeClass("rotate-toggler");
+}

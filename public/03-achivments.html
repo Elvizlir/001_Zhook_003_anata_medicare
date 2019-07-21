@@ -18,65 +18,104 @@
     <div class="main-wrapper">
       <div class="toggle-menu-mobile toggle-menu-mobile--js d-lg-none"><span></span>
       </div>
-      <div class="menu-mobile menu-mobile--js d-lg-none">
+      <div class="menu-mobile menu-mobile--js d-lg-none active">
         <div class="toggle-menu-mobile toggle-menu-mobile--js"><span></span>
         </div>
         <div class="menu-mobile__inner">
-          <ul class="menu-mobile__nav d-none d-lg-block">
-            <li class="menu-mobile__item"> <a class="menu-mobile__link" href="#">Главная</a>
+          <ul class="menu-mobile__list-nav" id="accordeon">
+            <li class="menu-mobile__item-nav"><a class="menu-mobile__item-link" href="#">Главная</a>
             </li>
-            <li class="menu-mobile__item"> <a class="menu-mobile__link" href="#">О компании</a>
-              <ul class="sub-menu second-font">
-                <li><a class="sub-menu-link" href="#">Профиль компании</a></li>
-                <li><a class="sub-menu-link" href="#">Производство</a></li>
-                <li><a class="sub-menu-link" href="#">Наши награды и достижения</a></li>
-                <li><a class="sub-menu-link" href="#">Дипломы и благодарности</a></li>
+            <li class="menu-mobile__item-nav"><a class="menu-mobile__item-link" href="#">О компании</a>
+              <div class="menu-mobile__toggler">⮞
+              </div>
+              <ul class="menu-mobile__list-subnav">
+                <li class="menu-mobile__item-subnav"><a class="menu-mobile__item-sublink" href="#">Профиль компании</a>
+                </li>
+                <li class="menu-mobile__item-subnav"><a class="menu-mobile__item-sublink" href="#">Производство</a>
+                </li>
+                <li class="menu-mobile__item-subnav"><a class="menu-mobile__item-sublink" href="#">Наши награды и достижения</a>
+                </li>
+                <li class="menu-mobile__item-subnav"><a class="menu-mobile__item-sublink" href="#">Дипломы и благодарности</a>
+                </li>
               </ul>
             </li>
-            <li class="menu-mobile__item"> <a class="menu-mobile__link" href="#">Продукты</a>
-              <ul class="sub-menu second-font">
-                <li><a class="sub-menu-link" href="#">Средства природного происхождения</a></li>
+            <li class="menu-mobile__item-nav"><a class="menu-mobile__item-link" href="#">Продукты</a>
+              <div class="menu-mobile__toggler">⮞
+              </div>
+              <ul class="menu-mobile__list-subnav">
+                <li class="menu-mobile__item-subnav"><a class="menu-mobile__item-sublink" href="#">Средства природного происхождения</a>
+                </li>
               </ul>
             </li>
-            <li class="menu-mobile__item"> <a class="menu-mobile__link" href="#">Новости</a>
-              <ul class="sub-menu second-font">
-                <li><a class="sub-menu-link" href="#">Новости компании</a></li>
-                <li><a class="sub-menu-link" href="#">Мировые новости медицины</a></li>
-                <li><a class="sub-menu-link" href="#">Наши новинки</a></li>
+            <li class="menu-mobile__item-nav"><a class="menu-mobile__item-link" href="#">Новости</a>
+              <div class="menu-mobile__toggler">⮞
+              </div>
+              <ul class="menu-mobile__list-subnav">
+                <li class="menu-mobile__item-subnav"><a class="menu-mobile__item-sublink" href="#">Новости компании</a>
+                </li>
+                <li class="menu-mobile__item-subnav"><a class="menu-mobile__item-sublink" href="#">Мировые новости медицины</a>
+                </li>
+                <li class="menu-mobile__item-subnav"><a class="menu-mobile__item-sublink" href="#">Наши новинки</a>
+                </li>
               </ul>
             </li>
-            <li class="menu-mobile__item"> <a class="menu-mobile__link" href="#">Специалистам</a>
-              <ul class="sub-menu second-font">
-                <li><a class="sub-menu-link" href="#">Опыт применения комбинированных фитопрепаратов в лечении заболеваний дыхательных путей</a></li>
-                <li><a class="sub-menu-link" href="#">Возможности фитонейрорегуляции у пациентов с тревожно-депрессивными расстройствами, обусловленными военным стрессом</a></li>
-                <li><a class="sub-menu-link" href="#">СРАВНИТЕЛЬНОЕ ИССЛЕДОВАНИЕ ФИТОПРЕПАРАТОВ ГЕПАКЛИН И СИЛИМАРИН у больных с метаболическим синдромом и неалкогольной жировой болезнью печени</a></li>
+            <li class="menu-mobile__item-nav"><a class="menu-mobile__item-link" href="#">Специалистам</a>
+              <div class="menu-mobile__toggler">⮞
+              </div>
+              <ul class="menu-mobile__list-subnav">
+                <li class="menu-mobile__item-subnav"><a class="menu-mobile__item-sublink" href="#">Опыт применения комбинированных фитопрепаратов в лечении заболеваний дыхательных путей</a>
+                </li>
+                <li class="menu-mobile__item-subnav"><a class="menu-mobile__item-sublink" href="#">Возможности фитонейрорегуляции у пациентов с тревожно-депрессивными расстройствами, обусловленными военным стрессом</a>
+                </li>
+                <li class="menu-mobile__item-subnav"><a class="menu-mobile__item-sublink" href="#">СРАВНИТЕЛЬНОЕ ИССЛЕДОВАНИЕ ФИТОПРЕПАРАТОВ ГЕПАКЛИН И СИЛИМАРИН у больных с метаболическим синдромом и неалкогольной жировой болезнью печени</a>
+                </li>
               </ul>
             </li>
-            <li class="menu-mobile__item"> <a class="menu-mobile__link" href="#">Пациентам</a>
-              <ul class="sub-menu second-font">
-                <li><a class="sub-menu-link" href="#">Аллергия: что делать?</a></li>
-                <li><a class="sub-menu-link" href="#">Как облегчить простуду?</a></li>
-                <li><a class="sub-menu-link" href="#">Как спастись от головной боли</a></li>
-                <li><a class="sub-menu-link" href="#">Язва желудка. Что нужно знать ?</a></li>
-                <li><a class="sub-menu-link" href="#">Советы при переедании</a></li>
-                <li><a class="sub-menu-link" href="#">Хламидиоз – как быть?</a></li>
-                <li><a class="sub-menu-link" href="#">Болезни сердца и сосудов. Профилактика атеросклероза</a></li>
-                <li><a class="sub-menu-link" href="#">Что делать если у Вас бронхит?</a></li>
-                <li><a class="sub-menu-link" href="#">Молочница: как от нее избавиться?</a></li>
-                <li><a class="sub-menu-link" href="#">Если у Вас гипертония…</a></li>
-                <li><a class="sub-menu-link" href="#">Гонорея - древнейший враг человечества</a></li>
-                <li><a class="sub-menu-link" href="#">Путь к здоровым ногтям</a></li>
-                <li><a class="sub-menu-link" href="#">ЗАЩИТНИК ОТ АЛЛЕРГИИ</a></li>
-                <li><a class="sub-menu-link" href="#">Головная боль. Как найти управу?</a></li>
-                <li><a class="sub-menu-link" href="#">Народная мудрость о погрешностях питания</a></li>
+            <li class="menu-mobile__item-nav"><a class="menu-mobile__item-link" href="#">Пациентам</a>
+              <div class="menu-mobile__toggler">⮞
+              </div>
+              <ul class="menu-mobile__list-subnav">
+                <li class="menu-mobile__item-subnav"><a class="menu-mobile__item-sublink" href="#">Аллергия: что делать?</a>
+                </li>
+                <li class="menu-mobile__item-subnav"><a class="menu-mobile__item-sublink" href="#">Как облегчить простуду?</a>
+                </li>
+                <li class="menu-mobile__item-subnav"><a class="menu-mobile__item-sublink" href="#">Как спастись от головной боли</a>
+                </li>
+                <li class="menu-mobile__item-subnav"><a class="menu-mobile__item-sublink" href="#">Язва желудка. Что нужно знать ?</a>
+                </li>
+                <li class="menu-mobile__item-subnav"><a class="menu-mobile__item-sublink" href="#">Советы при переедании</a>
+                </li>
+                <li class="menu-mobile__item-subnav"><a class="menu-mobile__item-sublink" href="#">Хламидиоз – как быть?</a>
+                </li>
+                <li class="menu-mobile__item-subnav"><a class="menu-mobile__item-sublink" href="#">Болезни сердца и сосудов. Профилактика атеросклероза</a>
+                </li>
+                <li class="menu-mobile__item-subnav"><a class="menu-mobile__item-sublink" href="#">Что делать если у Вас бронхит?</a>
+                </li>
+                <li class="menu-mobile__item-subnav"><a class="menu-mobile__item-sublink" href="#">Молочница: как от нее избавиться?</a>
+                </li>
+                <li class="menu-mobile__item-subnav"><a class="menu-mobile__item-sublink" href="#">Если у Вас гипертония…</a>
+                </li>
+                <li class="menu-mobile__item-subnav"><a class="menu-mobile__item-sublink" href="#">Гонорея - древнейший враг человечества</a>
+                </li>
+                <li class="menu-mobile__item-subnav"><a class="menu-mobile__item-sublink" href="#">Путь к здоровым ногтям</a>
+                </li>
+                <li class="menu-mobile__item-subnav"><a class="menu-mobile__item-sublink" href="#">ЗАЩИТНИК ОТ АЛЛЕРГИИ</a>
+                </li>
+                <li class="menu-mobile__item-subnav"><a class="menu-mobile__item-sublink" href="#">Головная боль. Как найти управу?</a>
+                </li>
+                <li class="menu-mobile__item-subnav"><a class="menu-mobile__item-sublink" href="#">Народная мудрость о погрешностях питания</a>
+                </li>
               </ul>
             </li>
-            <li class="menu-mobile__item"> <a class="menu-mobile__link" href="#">Карьера</a>
-              <ul class="sub-menu second-font">
-                <li><a class="sub-menu-link" href="#">Вакансии в странах СНГ</a></li>
+            <li class="menu-mobile__item-nav"><a class="menu-mobile__item-link" href="#">Карьера</a>
+              <div class="menu-mobile__toggler">⮞
+              </div>
+              <ul class="menu-mobile__list-subnav">
+                <li class="menu-mobile__item-subnav"><a class="menu-mobile__item-sublink" href="#">Вакансии в странах СНГ</a>
+                </li>
               </ul>
             </li>
-            <li class="menu-mobile__item"> <a class="menu-mobile__link" href="#">Контакты</a>
+            <li class="menu-mobile__item-nav"><a class="menu-mobile__item-link" href="#">Контакты</a>
             </li>
           </ul>
           <div class="text-right"></div>
@@ -89,7 +128,7 @@
         <div class="top-nav block-with-lazy">
           <div class="container">
             <div class="row">
-              <div class="col-auto"><a href="#"><img class="top-nav__header-logo" src="img/logo.png" alt="#" title=""/></a></div>
+              <div class="col-auto d-flex d-sm-block align-items-center"><a href="#"><img class="top-nav__header-logo" src="img/logo.png" alt="#" title=""/></a></div>
               <div class="top-nav__main-title col d-none d-md-block">
                 <div class="top-nav__company-name">an<span>a</span>nta medicare
                 </div>
@@ -270,31 +309,6 @@
         </div>
       </footer>
     </div>
-    <div class="form-wrap zoom-anim-dialog mfp-hide modal-win modal-form" id="modal-call">
-      <form>
-        <div class="text-center">
-          <div class="form-wrap__title h3 ttu">Обратный звонок
-          </div>
-          <p>Заполните заявку и&nbsp;мы&nbsp;с&nbsp;Вами свяжемся в&nbsp;течении 15&nbsp;минут</p>
-        </div>
-        <div class="form-wrap__input-wrap form-group text">
-          <label><input class="form-wrap__input form-control" type="Ваше Имя" required="required"/>
-          </label>
-        </div>
-        <!-- +e.input-wrap-->
-        <div class="form-wrap__input-wrap form-group tel">
-          <label><input class="form-wrap__input form-control" type="Ваш телефон" required="required"/>
-          </label>
-        </div>
-        <!-- +e.input-wrap--><input class="form-wrap__btn btn btn-block btn-warning mb-4" type="submit" value="Рассчитать"/>
-        <div class="form-wrap__polite">
-          <label class="custom-input"><input class="custom-input__input" type="checkbox" checked="checked"/><span class="custom-input__lab"></span><small class="custom-input__text text-secondary">Согласен на обработку и хранение моих персональных данных в соответствии с условиями</small>
-          </label>
-        </div>
-      </form>
-    </div>
-    <!-- #modal-call-->
-    <!-- modal-->
     <script src="js/jquery.min.js"></script>
     <!-- modal libs-->
     <script src="libs/magnificPopup/jquery.magnific-popup.min.js"></script>

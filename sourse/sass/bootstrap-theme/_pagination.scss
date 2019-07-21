@@ -1,22 +1,28 @@
+.pagination-wrapper ul,
 .pagination {
   display: flex;
+  flex-wrap: wrap;
   @include list-unstyled();
   @include border-radius();
 }
-
+.pagination-wrapper li .page-numbers,
 .page-link {
   position: relative;
   display: block;
   padding: $pagination-padding-y $pagination-padding-x;
   margin-left: -$pagination-border-width;
   line-height: $pagination-line-height;
-  color: $pagination-color;
-  background-color: $pagination-bg;
-  border: $pagination-border-width solid $pagination-border-color;
-
+  color: #626262;
+  background-color: #e8e8e1;
+  width: rem(70);
+  height: rem(70);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 rem(1) rem(1) 0;
   &:hover {
     z-index: 2;
-    color: $pagination-hover-color;
+    color: #5c9ab6;
     text-decoration: none;
     background-color: $pagination-hover-bg;
     border-color: $pagination-hover-border-color;
@@ -28,7 +34,7 @@
     box-shadow: $pagination-focus-box-shadow;
   }
 }
-
+.pagination-wrapper li,
 .page-item {
   &:first-child {
     .page-link {
@@ -41,12 +47,16 @@
       @include border-right-radius($border-radius);
     }
   }
-
+    .current,
   &.active .page-link {
     z-index: 1;
     color: $pagination-active-color;
-    background-color: $pagination-active-bg;
+    background-color: #5c9ab6;
     border-color: $pagination-active-border-color;
+    &:hover{
+      background-color: #5c9ab6;
+      color: #fff;
+    }
   }
 
   &.disabled .page-link {

@@ -8,12 +8,13 @@
 @include font-face ("ProbaPro", "../fonts/ProbaPro-Medium/ProbaPro-Medium", 500 , $file-formats: woff2 woff ttf);
 @include font-face ("ProbaPro", "../fonts/ProbaPro-Regular/ProbaPro-Regular", 400, $file-formats: woff2 woff ttf);
 @include font-face ("ProbaPro", "../fonts/ProbaPro-Bold/ProbaPro-Bold", 700, $file-formats: woff2 woff ttf);
-@include font-face ("HelveticaNeueCyr", "../fonts/HelveticaNeueCyr-Roman/HelveticaNeueCyr-Roman", 400, $file-formats: woff2 woff ttf);
+@include font-face ("Helvetica", "../fonts/HelveticaRegular/HelveticaRegular", 400, $file-formats: woff2 woff ttf);
+@include font-face ("Helvetica", "../fonts/HelveticaBold/HelveticaBold", 700, $file-formats: woff2 woff ttf);
 
 
 $default-font: "ProbaPro";
 $second-font: "OpenSans";
-$extra-font: "HelveticaNeueCyr";
+$extra-font: "Helvetica";
 .second-font{
   font-family: $second-font;
 }
