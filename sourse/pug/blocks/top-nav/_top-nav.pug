@@ -2,7 +2,7 @@
 mixin mob-mnu()
 	+b.toggle-menu-mobile--js.d-lg-none
 		span
-	+b.menu-mobile--js.d-lg-none.active
+	+b.menu-mobile--js.d-lg-none
 		+b.toggle-menu-mobile--js
 			span
 		+e.inner
@@ -116,12 +116,12 @@ mixin top-nav()
 								+e.input-wrap.form-group
 									+e.SELECT.input.form-control.extra-font#lang-select
 										//- option.language.d-none(disabled selected) Выберите страну
-										+e.OPTION.language(data-description="Выберите страну") 
-										+e.OPTION.language(value="0" data-description="Главная") 
-										+e.OPTION.language(value="1" data-imagesrc="img/lang_ua.png" data-description="Украина") 
-										+e.OPTION.language(value="2" data-imagesrc="img/lang_en.png" data-description="Великобритания")
-										+e.OPTION.language(value="3" data-imagesrc="img/lang_in.png" data-description="Индия") 
-										+e.OPTION.language(value="4" data-imagesrc="img/lang_md.png" data-description="Молдавия") 
+										option(data-description="Выберите страну") &nbsp;
+										option(value="0" data-description="Главная") &nbsp;
+										option(value="1" data-imagesrc="img/lang_ua.png" data-description="Украина") &nbsp;
+										option(value="2" data-imagesrc="img/lang_en.png" data-description="Великобритания") &nbsp;
+										option(value="3" data-imagesrc="img/lang_in.png" data-description="Индия") &nbsp;
+										option(value="4" data-imagesrc="img/lang_md.png" data-description="Молдавия") &nbsp;
 					+e.soc.d-none.d-sm-flex
 						+e.A.soc-link(href="#")
 							+e.IMG.soc-img(src="img/facebook.png" alt="#")
@@ -141,7 +141,7 @@ mixin top-nav()
 			+mnu()
 			+b.search-block
 				+e.BUTTON.search(type="submit") Поиск
-				+form-wrap
-					+input("toggle-search","","Запрос для поиска...")
+				.form-wrap
+					input.form-wrap__input.toggle-search(type="text" placeholder="Запрос для поиска...")
 					
 	// end top-nav

@@ -466,7 +466,10 @@ img.lazy{
 .title-page-block{
 	display: flex;
 	align-items: center;
-	flex-wrap: wrap;
+	@include media-breakpoint-down(md) {
+		flex-wrap: wrap;
+	}
+	position: relative;
 	h2{
 		color: #5c9ab6;
 		font-weight: normal;
@@ -560,7 +563,7 @@ img.lazy{
 	}
 }
 
-#med-item{
+.med-item{
 	span{
 		text-align: left;
 	}
@@ -650,6 +653,12 @@ img.lazy{
 	a{
 		color: #551A8B;
 		text-decoration: underline;
+	}
+}
+table{
+	border: 1px solid #626262;
+	td{
+		border: 1px solid #626262;
 	}
 }
 .news{
@@ -768,4 +777,120 @@ img.lazy{
 }
 .disabled-class{
 	display: none;
+}
+.news-block{
+	padding: rem(40) 0 rem(100);
+	@include media-breakpoint-down(md) {
+		padding: rem(20) 0 rem(20);
+	}
+}
+.news-col{
+	margin-bottom: rem(40);
+	img{
+		width: 100%;
+		height: auto;
+		margin-bottom: rem(15);
+	}
+	a{
+		&:hover{
+			text-decoration: none;
+		}
+	}
+	h5{
+		text-align: left;
+		font-weight: normal;
+		font-size: rem(16);
+		color: #5c9ab6;
+		text-decoration: none;
+		line-height: rem(24);
+		margin-bottom: rem(8);
+		&:hover{
+			text-decoration: none;
+		}
+	}
+	p{
+		color: #b5b5b5;
+		font-size: rem(14);
+		line-height: rem(22);
+	}
+	.news-btn{
+		max-width: rem(122);
+		border: 1px solid #ccc;
+		color: #b5b5b5;
+		font-size: rem(12);
+		height: rem(30);
+		text-transform: uppercase;
+		background-color: #fff;
+		&:hover{
+			background-color: $primary;
+			color: #fff;
+		}
+	}
+}
+
+.contacts-page{
+	padding: rem(40) 0 0;
+	@include media-breakpoint-down(sm) {
+		padding: rem(20) 0 0;
+	}
+	&__item{
+		padding: rem(40) 0;
+		@include media-breakpoint-down(sm) {
+			padding: rem(20) 0;
+		}
+		position: relative;
+		&::before{
+			content: '';
+			height: 1px;
+			background: #f3f3f3;
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+		}
+	}
+	&__title{
+		margin-bottom: rem(15);
+		font-weight: 500;
+		text-transform: uppercase;
+		font-size: rem(18);
+		color: #343e5c;
+	}
+	&__text{
+		font-family: $second-font;
+		font-size: rem(14);
+		margin-bottom: rem(15);
+		color: #626262;
+		line-height: rem(24);
+	}
+	iframe{
+		width: 100%;
+	}
+}
+
+.contact-form{
+	padding-top: rem(14);
+	.form-wrap{
+		background-color: #f3f3f3;
+		padding: rem(30);
+		position: relative;
+		margin-bottom: rem(30);
+		@include media-breakpoint-up(xl) {
+			padding: rem(30) rem(20) rem(30) rem(55);
+			height: rem(916);
+			&::after{
+				content: '';
+				background-color: #f3f3f3;
+				position: absolute;
+				top: 0;
+				width: 1500px;
+				height: 100%;
+				left: 100%;
+			}
+		}
+		textarea{
+			height: rem(180);
+		}
+	}
 }

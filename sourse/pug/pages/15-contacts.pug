@@ -1,0 +1,66 @@
+extends layout/main.pug
+
+
+include ../blocks/s-content/_s-content.pug
+include ../blocks/s-contact/_s-contact.pug
+include ../blocks/s-slider/_s-slider.pug
+include ../blocks/s-about-company/_s-about-company.pug
+include ../blocks/s-news/_s-news.pug
+include ../blocks/s-meds/_s-meds.pug
+include ../blocks/s-information/_s-information.pug
+
+block title
+	title title
+
+block pagecontent
+	+mob-mnu()
+	+header()
+		+top-nav()
+	
+	.container
+		.row
+			.col-12.col-xl-9
+				.title-page-block
+					+page-title("Контактная информация")
+					+breadcrumb("Главная","Контакты")
+				+b.contacts-page
+					+e.item
+						.row
+							.col-md-4
+								+e.H3.title Офис в европе
+								+e.P.text Suite 1, 2 Station Court, Imperial Wharf, Townmead Road, Fulham, London, SW6 2PY, United Kingdom
+								+e.P.text tel.: <a href="tel:+442073719666">+ 442073719666</a>
+								+e.P.text e-mail: <a href="mailto:office@anantamedicare.co.uk">office@anantamedicare.co.uk</a>
+							.col-md-8
+								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d621.3249923066905!2d-0.1857518707266452!3d51.47100799872686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876058043ffb06d%3A0x9d4f5359745fc45a!2zNDhBIEdsZW5yb3NhIFN0LCBGdWxoYW0sIExvbmRvbiBTVzYgMlFaLCDQktC10LvQuNC60L7QsdGA0LjRgtCw0L3QuNGP!5e0!3m2!1sru!2sby!4v1563794867960!5m2!1sru!2sby" width="400" height="300" style="border:0" allowfullscreen></iframe>
+					+e.item
+						.row
+							.col-md-4
+								+e.H3.title Офис в индии
+								+e.P.text 621, Ring Road Mall, Sector-3, Rohini, Delhi-110085, India,
+								+e.P.text tel.: <a href="tel:+911147050531">+ 911147050531</a>
+								+e.P.text e-mail: <a href="mailto:info@anantamedicare.in">info@anantamedicare.in</a>
+							.col-md-8
+								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d141154.35710440634!2d77.08588284283306!3d28.65757764897756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d02585b29d631%3A0xc32760f2c2bc2d74!2sShopping+Center+Delhi!5e0!3m2!1sru!2sus!4v1563795069639!5m2!1sru!2sus" width="400" height="300" style="border:0" allowfullscreen></iframe>
+					+e.item
+						.row
+							.col-md-4
+								+e.H3.title Офис в СНГ
+								+e.P.text Ул. Искринская, 37, г. Харьков, Украина, 61001,
+								+e.P.text tel.: <a href="tel:+38(057)739-03-00">+ 38 (057) 739-03-00</a>
+								+e.P.text e-mail: <a href="mailto:office@anantamedicare.com">office@anantamedicare.com</a>
+							.col-md-8
+								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2564.876065634385!2d36.26149976599719!3d49.994932979415076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127a0bdefe28349%3A0x96beab5e90889cb5!2z0KTQvtGA0LzQsNGCINCl0LDRgNGM0LrQvtCy!5e0!3m2!1sru!2sus!4v1563795221247!5m2!1sru!2sus" width="400" height="300" style="border:0" allowfullscreen></iframe>
+			.col-12.col-xl-3
+				.title-page-block
+					+contacts-form-title("обратная связь")
+				.contact-form
+					+form-wrap
+						+input("ФИО *","text","")
+						+input("ваш e-mail *","text","")
+						+input("контактные телефоны","text","")
+						+input("текст сообщения","textarea","")
+						button.btn-main.form-btn(type="submit") Отправить
+
+	+footer()
+

@@ -161,13 +161,27 @@ mixin page-title(t)
 	+b.page-title
 			+e.title=t
 
+mixin contacts-form-title(t)
+	+b.page-title.contacts-form-title
+			+e.title=t
+
+mixin form-title(t)
+	+b.page-title.form-title
+			+e.title=t
+
 mixin page-subtitle(t)
-	+b.page-title#page-subtitle
+	+b.page-title.page-subtitle
 			+e.A.title.second-font(href="#")=t
 
 mixin product-subtitle(t)
 	+b.page-title.page-subtitle.product-subtitle
 			+e.A.title(href="#")=t
+
+
+mixin product-subtitle-img(t)
+	+b.page-title.page-subtitle.product-subtitle.image-subtitle
+			+e.A.title(href="#")=t
+	img.subtitle-img(src="img/subtitle-image.png" alt="#")
 
 
 mixin share-block()

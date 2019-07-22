@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>title</title>
+    <meta name="description" content="о чем страница">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, shrink-to-fit=no">
+    <meta property="og:image" content="path/to/image.jpg">
+    <link rel="shortcut icon" type="image/png" href="img/favicon/favicon.png">
+    <!-- Custom Browsers Color-->
+    <meta name="theme-color" content="#3361d8">
+    <link rel="stylesheet" href="libs/magnificPopup/magnific-popup.css">
+    <link rel="stylesheet" href="libs/slick/slick.css">
+    <link rel="stylesheet" href="css/main.min.css">
+  </head>
+  <body>
+    <div class="main-wrapper">
+      <div class="toggle-menu-mobile toggle-menu-mobile--js d-lg-none"><span></span>
+      </div>
+      <div class="menu-mobile menu-mobile--js d-lg-none">
+        <div class="toggle-menu-mobile toggle-menu-mobile--js"><span></span>
+        </div>
+        <div class="menu-mobile__inner">
+          <ul class="menu-mobile__list-nav" id="accordeon">
+            <li class="menu-mobile__item-nav"><a class="menu-mobile__item-link" href="#">Главная</a>
+            </li>
+            <li class="menu-mobile__item-nav"><a class="menu-mobile__item-link" href="#">О компании</a>
+              <div class="menu-mobile__toggler">⮞
+              </div>
+              <ul class="menu-mobile__list-subnav">
+                <li class="menu-mobile__item-subnav"><a class="menu-mobile__item-sublink" href="#">Профиль компании</a>
+                </li>
+                <li class="menu-mobile__item-subnav"><a class="menu-mobile__item-sublink" href="#">Производство</a>
+                </li>
+                <li class="menu-mobile__item-subnav"><a class="menu-mobile__item-sublink" href="#">Наши награды и достижения</a>
+                </li>
+                <li class="menu-mobile__item-subnav"><a class="menu-mobile__item-sublink" href="#">Дипломы и благодарности</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-mobile__item-nav"><a class="menu-mobile__item-link" href="#">Продукты</a>
+              <div class="menu-mobile__toggler">⮞
+              </div>
+              <ul class="menu-mobile__list-subnav">
+                <li class="menu-mobile__item-subnav"><a class="menu-mobile__item-sublink" href="#">Средства природного происхождения</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-mobile__item-nav"><a class="menu-mobile__item-link" href="#">Новости</a>
+              <div class="menu-mobile__toggler">⮞
+              </div>
+              <ul class="menu-mobile__list-subnav">
+                <li class="menu-mobile__item-subnav"><a class="menu-mobile__item-sublink" href="#">Новости компании</a>
+                </li>
+                <li class="menu-mobile__item-subnav"><a class="menu-mobile__item-sublink" href="#">Мировые новости медицины</a>
+                </li>
+                <li class="menu-mobile__item-subnav"><a class="menu-mobile__item-sublink" href="#">Наши новинки</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-mobile__item-nav"><a class="menu-mobile__item-link" href="#">Специалистам</a>
+              <div class="menu-mobile__toggler">⮞
+              </div>
+              <ul class="menu-mobile__list-subnav">
+                <li class="menu-mobile__item-subnav"><a class="menu-mobile__item-sublink" href="#">Опыт применения комбинированных фитопрепаратов в лечении заболеваний дыхательных путей</a>
+                </li>
+                <li class="menu-mobile__item-subnav"><a class="menu-mobile__item-sublink" href="#">Возможности фитонейрорегуляции у пациентов с тревожно-депрессивными расстройствами, обусловленными военным стрессом</a>
+                </li>
+                <li class="menu-mobile__item-subnav"><a class="menu-mobile__item-sublink" href="#">СРАВНИТЕЛЬНОЕ ИССЛЕДОВАНИЕ ФИТОПРЕПАРАТОВ ГЕПАКЛИН И СИЛИМАРИН у больных с метаболическим синдромом и неалкогольной жировой болезнью печени</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-mobile__item-nav"><a class="menu-mobile__item-link" href="#">Пациентам</a>
+              <div class="menu-mobile__toggler">⮞
+              </div>
+              <ul class="menu-mobile__list-subnav">
+                <li class="menu-mobile__item-subnav"><a class="menu-mobile__item-sublink" href="#">Аллергия: что делать?</a>
+                </li>
+                <li class="menu-mobile__item-subnav"><a class="menu-mobile__item-sublink" href="#">Как облегчить простуду?</a>
+                </li>
+                <li class="menu-mobile__item-subnav"><a class="menu-mobile__item-sublink" href="#">Как спастись от головной боли</a>
+                </li>
+                <li class="menu-mobile__item-subnav"><a class="menu-mobile__item-sublink" href="#">Язва желудка. Что нужно знать ?</a>
+                </li>
+                <li class="menu-mobile__item-subnav"><a class="menu-mobile__item-sublink" href="#">Советы при переедании</a>
+                </li>
+                <li class="menu-mobile__item-subnav"><a class="menu-mobile__item-sublink" href="#">Хламидиоз – как быть?</a>
+                </li>
+                <li class="menu-mobile__item-subnav"><a class="menu-mobile__item-sublink" href="#">Болезни сердца и сосудов. Профилактика атеросклероза</a>
+                </li>
+                <li class="menu-mobile__item-subnav"><a class="menu-mobile__item-sublink" href="#">Что делать если у Вас бронхит?</a>
+                </li>
+                <li class="menu-mobile__item-subnav"><a class="menu-mobile__item-sublink" href="#">Молочница: как от нее избавиться?</a>
+                </li>
+                <li class="menu-mobile__item-subnav"><a class="menu-mobile__item-sublink" href="#">Если у Вас гипертония…</a>
+                </li>
+                <li class="menu-mobile__item-subnav"><a class="menu-mobile__item-sublink" href="#">Гонорея - древнейший враг человечества</a>
+                </li>
+                <li class="menu-mobile__item-subnav"><a class="menu-mobile__item-sublink" href="#">Путь к здоровым ногтям</a>
+                </li>
+                <li class="menu-mobile__item-subnav"><a class="menu-mobile__item-sublink" href="#">ЗАЩИТНИК ОТ АЛЛЕРГИИ</a>
+                </li>
+                <li class="menu-mobile__item-subnav"><a class="menu-mobile__item-sublink" href="#">Головная боль. Как найти управу?</a>
+                </li>
+                <li class="menu-mobile__item-subnav"><a class="menu-mobile__item-sublink" href="#">Народная мудрость о погрешностях питания</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-mobile__item-nav"><a class="menu-mobile__item-link" href="#">Карьера</a>
+              <div class="menu-mobile__toggler">⮞
+              </div>
+              <ul class="menu-mobile__list-subnav">
+                <li class="menu-mobile__item-subnav"><a class="menu-mobile__item-sublink" href="#">Вакансии в странах СНГ</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-mobile__item-nav"><a class="menu-mobile__item-link" href="#">Контакты</a>
+            </li>
+          </ul>
+          <div class="text-right"></div>
+        </div>
+      </div>
+      <!--  мобильное меню-->
+      <!-- start HEADER.header-->
+      <header class="header block-with-lazy">
+        <!-- start top-nav-->
+        <div class="top-nav block-with-lazy">
+          <div class="container">
+            <div class="row">
+              <div class="col-auto d-flex d-sm-block align-items-center"><a href="#"><img class="top-nav__header-logo" src="img/logo.png" alt="#" title=""/></a></div>
+              <div class="top-nav__main-title col d-none d-md-block">
+                <div class="top-nav__company-name">an<span>a</span>nta medicare
+                </div>
+                <div class="top-nav__slogan d-none d-lg-block">Бесконечная забота о вашем здоровье
+                </div>
+              </div>
+              <div class="top-nav__language-col col col-md-auto text-right">
+                <div class="top-nav__language-block extra-font">
+                  <div class="block">
+                    <div class="top-nav__language"><img class="top-nav__flag" src="img/lang_ru.png" alt="#" title=""/>
+                      <div class="top-nav__country-name">Россия
+                      </div>
+                    </div>
+                    <div class="form-wrap">
+                      <form>
+                        <div class="form-wrap__input-wrap form-group">
+                          <select class="form-wrap__input form-control extra-font" id="lang-select">
+                            <option data-description="Выберите страну">&nbsp;</option>
+                            <option value="0" data-description="Главная">&nbsp;</option>
+                            <option value="1" data-imagesrc="img/lang_ua.png" data-description="Украина">&nbsp;</option>
+                            <option value="2" data-imagesrc="img/lang_en.png" data-description="Великобритания">&nbsp;</option>
+                            <option value="3" data-imagesrc="img/lang_in.png" data-description="Индия">&nbsp;</option>
+                            <option value="4" data-imagesrc="img/lang_md.png" data-description="Молдавия">&nbsp;</option>
+                          </select>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+                <div class="top-nav__soc d-none d-sm-flex"><a class="top-nav__soc-link" href="#"><img class="top-nav__soc-img" src="img/facebook.png" alt="#" title=""/></a><a class="top-nav__soc-link" href="#"><img class="top-nav__soc-img" src="img/vk.png" alt="#" title=""/></a><a class="top-nav__soc-link" href="#"><img class="top-nav__soc-img" src="img/ok.png" alt="#" title=""/></a><a class="top-nav__soc-link" href="#"><img class="top-nav__soc-img" src="img/instagram.png" alt="#" title=""/></a><a class="top-nav__soc-link" href="#"><img class="top-nav__soc-img" src="img/google.png" alt="#" title=""/></a>
+                </div>
+              </div>
+            </div>
+            <ul class="top-nav__nav d-none d-lg-block">
+              <li class="top-nav__item"> <a class="top-nav__link" href="#">Главная</a>
+              </li>
+              <li class="top-nav__item"> <a class="top-nav__link" href="#">О компании</a>
+                <ul class="sub-menu second-font">
+                  <li><a class="sub-menu-link" href="#">Профиль компании</a></li>
+                  <li><a class="sub-menu-link" href="#">Производство</a></li>
+                  <li><a class="sub-menu-link" href="#">Наши награды и достижения</a></li>
+                  <li><a class="sub-menu-link" href="#">Дипломы и благодарности</a></li>
+                </ul>
+              </li>
+              <li class="top-nav__item"> <a class="top-nav__link" href="#">Продукты</a>
+                <ul class="sub-menu second-font">
+                  <li><a class="sub-menu-link" href="#">Средства природного происхождения</a></li>
+                </ul>
+              </li>
+              <li class="top-nav__item"> <a class="top-nav__link" href="#">Новости</a>
+                <ul class="sub-menu second-font">
+                  <li><a class="sub-menu-link" href="#">Новости компании</a></li>
+                  <li><a class="sub-menu-link" href="#">Мировые новости медицины</a></li>
+                  <li><a class="sub-menu-link" href="#">Наши новинки</a></li>
+                </ul>
+              </li>
+              <li class="top-nav__item"> <a class="top-nav__link" href="#">Специалистам</a>
+                <ul class="sub-menu second-font">
+                  <li><a class="sub-menu-link" href="#">Опыт применения комбинированных фитопрепаратов в лечении заболеваний дыхательных путей</a></li>
+                  <li><a class="sub-menu-link" href="#">Возможности фитонейрорегуляции у пациентов с тревожно-депрессивными расстройствами, обусловленными военным стрессом</a></li>
+                  <li><a class="sub-menu-link" href="#">СРАВНИТЕЛЬНОЕ ИССЛЕДОВАНИЕ ФИТОПРЕПАРАТОВ ГЕПАКЛИН И СИЛИМАРИН у больных с метаболическим синдромом и неалкогольной жировой болезнью печени</a></li>
+                </ul>
+              </li>
+              <li class="top-nav__item"> <a class="top-nav__link" href="#">Пациентам</a>
+                <ul class="sub-menu second-font">
+                  <li><a class="sub-menu-link" href="#">Аллергия: что делать?</a></li>
+                  <li><a class="sub-menu-link" href="#">Как облегчить простуду?</a></li>
+                  <li><a class="sub-menu-link" href="#">Как спастись от головной боли</a></li>
+                  <li><a class="sub-menu-link" href="#">Язва желудка. Что нужно знать ?</a></li>
+                  <li><a class="sub-menu-link" href="#">Советы при переедании</a></li>
+                  <li><a class="sub-menu-link" href="#">Хламидиоз – как быть?</a></li>
+                  <li><a class="sub-menu-link" href="#">Болезни сердца и сосудов. Профилактика атеросклероза</a></li>
+                  <li><a class="sub-menu-link" href="#">Что делать если у Вас бронхит?</a></li>
+                  <li><a class="sub-menu-link" href="#">Молочница: как от нее избавиться?</a></li>
+                  <li><a class="sub-menu-link" href="#">Если у Вас гипертония…</a></li>
+                  <li><a class="sub-menu-link" href="#">Гонорея - древнейший враг человечества</a></li>
+                  <li><a class="sub-menu-link" href="#">Путь к здоровым ногтям</a></li>
+                  <li><a class="sub-menu-link" href="#">ЗАЩИТНИК ОТ АЛЛЕРГИИ</a></li>
+                  <li><a class="sub-menu-link" href="#">Головная боль. Как найти управу?</a></li>
+                  <li><a class="sub-menu-link" href="#">Народная мудрость о погрешностях питания</a></li>
+                </ul>
+              </li>
+              <li class="top-nav__item"> <a class="top-nav__link" href="#">Карьера</a>
+                <ul class="sub-menu second-font">
+                  <li><a class="sub-menu-link" href="#">Вакансии в странах СНГ</a></li>
+                </ul>
+              </li>
+              <li class="top-nav__item"> <a class="top-nav__link" href="#">Контакты</a>
+              </li>
+            </ul>
+            <div class="search-block">
+              <button class="search-block__search" type="submit">Поиск
+              </button>
+              <div class="form-wrap">
+                <input class="form-wrap__input toggle-search" type="text" placeholder="Запрос для поиска..."/>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end top-nav-->
+      </header>
+      <!-- end HEADER.header-->
+      <div class="container">
+        <div class="title-page-block">
+          <div class="page-title">
+            <div class="page-title__title">Пациентам
+            </div>
+          </div>
+          <nav class="breadcrumb"><a class="breadcrumb-item" href="#">Главная</a><a class="breadcrumb-item" href="#">Пациентам</a><span class="breadcrumb-item active">Народная мудрость о погрешностях питания</span>
+          </nav>
+        </div>
+        <div class="title-page-block">
+          <div class="page-title page-subtitle product-subtitle image-subtitle"><a class="page-title__title" href="#">К списку статей</a>
+          </div><img class="subtitle-img" src="img/subtitle-image.png" alt="#"/>
+        </div>
+      </div>
+      <div class="container">
+        <div class="for-specialists-page">
+          <h3>Народная мудрость о погрешностях питания</h3>
+          <p style="text-align: center;"> <strong>Народная мудрость о погрешностях питания</strong></p>
+          <p style="text-align: center;"><img src="img/fajboleks_1.jpg" alt="#" style="max-width: 298px;"></p>
+          <p>Здоровое питание — это питание, обеспечивающее рост, нормальное развитие и жизнедеятельность человека, которое способствует укреплению и поддержанию здоровья, а также профилактике заболеваний. Как много сказано и написано на эту тему, но каждый вкладывает свой смысл в это понятие.  Давайте же обратимся к кладезю народной мудрости, почитайте, что говорят пословицы на этот счет.</p>
+          <p style="text-align: center; font-style: italic; color: #008000;">&laquo;Нужно есть, чтобы жить, а&nbsp;не&nbsp;жить, чтобы есть&raquo;</p>
+          <p>   Пожалуй, одно из наиболее известных изречений о пище. Слова, принадлежащие Сократу, актуальны во все времена. Особенно сейчас, когда настолько эволюционировала культура питания и преумножилось разнообразие пищи. Этому также способствовало появление всевозможных видов «быстрой еды», полуфабрикатов, рафинированных продуктов, усилителей вкуса и т.п. Безусловно, это вкусно, но далеко не полезно. И факт остается фактом, частое переедание негативно отражается на пищеварительных процессах и состоянии всего организма. Нужно помнить, что все хорошо в меру.</p>
+          <p style="text-align: center; font-style: italic; color: #008000;">&laquo;Не&nbsp;всё в&nbsp;рот, что око видит&raquo;</p>
+          <p>Еще одна пословица, которая напоминает об избирательности в еде. Ведь вы наверняка замечали, что, употребляя одни продукты или блюда вы чувствуете легкость и комфорт, другие – тяжесть в животе и чувство распирания. Имеет влияние и способ приготовления -  варенные и печенные блюда усваиваются лучше, чем жаренные или копченые. Пищевой рацион каждого человека индивидуален, поэтому один и тот же продукт может одного крепить, а другого слабить. Обращайте внимание на свое самочувствие после приема пищи, относитесь к ее выбору с умом, тогда она не только будет источником энергии, но и залогом бодрости и хорошего самочувствия.</p>
+          <p style="text-align: center; font-style: italic; color: #008000;">&laquo;Живот не&nbsp;мешок: про запас не&nbsp;поешь&raquo;</p>
+          <p>Гласит еще одна пословица, напоминая, что люди не верблюды. Поэтому, не стоит пренебрегать количеством приемов пищи, съедая много в один прием. Единственное чего можно добиться в этом случае – растяжение стенок желудка. Кроме того, переедание требует усиления ферментативной активности – выработки большего количества ферментов поджелудочной и желчи. Это определенная нагрузка на пищеварительный тракт. Постоянное переедание способствует возникновения запора.</p>
+          <p style="text-align: center; font-style: italic; color: #008000;">&laquo;Не&nbsp;глотай, не&nbsp;прожевавши, не&nbsp;болтай, не&nbsp;подумавши&raquo;</p>
+          <p>О второй части поговорки, вывод делайте сами, а вот на счет «не глотай, не прожевавши» – и говорить нечего. Как известно, пищу нужно тщательно пережевывать. И это не спроста. Ведь, при пережевывании пища не только измельчается, она также обрабатывается ферментами, которые содержатся в слюне. Это облегчает ее дальнейшее усвоение. Плохо пережеванная твердая пища может долго оставаться в пищеварительном тракте, нарушая нормальную работу и приводить к развитию запоров.</p>
+          <p style="text-align: center; font-style: italic; color: #008000;">&laquo;Что за&nbsp;беда, коли пьётся вода&raquo;</p>
+          <p>В организме человека содержится от 50 % до 75 % воды, в зависимости от веса и возраста. Потеря более 10 % воды может привести к смерти. Поэтому ежедневное потребление воды около 1,5-2 литров является залогом хорошего самочувствия и нормального функционирования органов и систем. Постоянный дефицит воды может отражаться на состоянии кожи, работе сердечно – сосудистой и пищеварительной систем. Хронический недостаток воды может стать причиной затруднений в работе кишечника и развитии запора.</p>
+          <p style="text-align: center; font-style: italic; color: #008000;">&laquo;Овощи на&nbsp;столе&nbsp;&mdash; здоровье в&nbsp;доме&raquo;</p>
+          <p style="text-align: center; font-style: italic; color: #008000;">&laquo;Обед без овощей&nbsp;&mdash; праздник без музыки&raquo;</p>
+          <p>Сразу две приведенные пословицы гласят о важности натуральных компонентов в ежедневном рационе человека. Овощи богаты натуральными пищевыми волокнами, лёгкими для пищеварения нутриентами, минералами, аминокислотами и витаминами. Хочется подробнее рассказать о пищевых волокнах, ведь они совершенно незаменимы для полноценного здорового питания. Именно они способствует улучшению работы кишечника, выводят токсины и предупреждают развитие запоров.</p>
+          <p>Источниками пищевых волокон являются продукты из зерна, бобовые, овощи и фрукты. Их нет в животной пище – рыбе, мясе, молоке и яйцах. Пищевые волокна – это большая группа веществ: крахмал, лигнин, целлюлоза, камеди, слизи, пектиновые вещества и т.д.</p>
+          <p>Здоровое питание предполагает обязательное наличие пищевых волокон. Согласно рекомендациям специалистов, ежедневная норма потребления пищевых волокон для взрослого составляет:</p>
+          <p>14 г пищевых волокон на 1000 ккал, что равно:</p>
+          <p>Для мужчин - 38 грамм в сутки  </p>
+          <p>Для женщин - 25 грамм в сутки </p>
+          <p>Для детей школьного возраста 15-20 грамм в сутки пищевых волокон.</p>
+          <p>В реалиях повседневной жизни, среднестатистический человек потребляет около половины рекомендуемой нормы. И это не удивительно, ведь если отобразить данные цифры в виде продуктов, выходит, что в день нужно съедать 11 тарелок овощного салата. Согласитесь, под силу разве что вегетарианцу.</p>
+          <p>Наиболее популярные пищевые волокна, которые известны многим – это клетчатка. Она входит в структуру большинства растений, и представляет собой углевод, который не переваривается в организме человека. Несмотря на то, что клетчатка практически не усваивается организмом, она играет важную роль в пищеварении. Содержание клетчатки в растениях существенно варьируется в зависимости от сорта и способа выращивания, а в готовых продуктах питания — от конкретных технологий производства. Продуктами питания, наиболее богатыми клетчаткой, являются отруби (по сути, это твердая оболочка зерна), льняное семя и цельнозерновые крупы (например, перловка, гречка и овес).</p>
+          <p>Отруби – это достаточно грубые пищевые волокна, в виду их природной структуры крупного помола. Поэтому они могут усугублять воспаления при поражениях органов пищеварения, которые требуют щадящего отношения к слизистым (например, колиты, гастриты, дивертикулиты и др).</p>
+          <p>В отличие от отрубей, есть более мягкие волокна. Большую ценность имеют пищевые волокна с обволакивающим действием, к ним относится шелуха семян подорожника.</p>
+          <p style="text-align: center; font-style: italic; color: #008000;">&laquo;Коль желудок портит стул&nbsp;&mdash; подорожник ешь, как мул&raquo;</p>
+          <p>Подорожник благодаря своим свойствам использовался во многих медицинах с давних времен. Насчитывает более 150 видов растений семейства Подорожниковые, распространённых по всему земному шару, хотя многие из них считаются сорняками. На территории Украины обычно используются Plantago major — подорожник большой и Plantago lanceolata L. — подорожник ланцетный.</p>
+          <p>Водный настой сока свежих листьев используются для разжижения мокроты и выведении ее при кашле. Применение водного настоя и свежего сока листьев подорожника способствует быстрому очищению и заживлению ран. Экстракт листьев подорожника большого оказывает кровоостанавливающее, ранозаживляющее и бактериостатическое действие. Сок свежих листьев эффективен при хронических гастритах, язвенной болезни желудка и двенадцатиперстной кишки с нормальной или пониженной кислотностью желудочного сока.</p>
+          <p>Очень интересным видом подорожника является подорожник яйцевидный (Plantago ovata), синоним - подорожник индийский. Это небольшое травянистое однолетнее растение отличается внешним видом семян: они не тёмно-бурые, а имеют телесно-розовый оттенок с пурпурной полоской в рубчике. Родина его - Индия, вследствие чего он издавна используется в рецептурах индийской медицины. Климатические условия произрастания этого вида подорожника очень суровы. Тропический климат, с устойчивыми ветрами, сменяется сезоном дождей. Выжить в таких условиях могут только те растения, которые запасают достаточное количество питательных веществ и активно связывают избыток воды. Именно поэтому, подорожник яйцевидный отличается от других видов количеством полезных веществ в семенах. Он содержит до 40% полисахаридов (пищевых волокон), в то время как другие виды содержат в 4 раза меньше полезных веществ.</p>
+          <p style="text-align: center;"><img src="img/fajboleks_2.png" alt="#" style="max-width: 233px;"></p>
+          <p>Именно семена подорожника используются, когда «желудок портит стул». А конкретнее шелуха семян, которые входят в состав современного средства для нормализации работы кишечника Файболекс. Обратите внимание, это не обычное химическое слабительное, а средство на натуральной основе, которое приводит в норму работу кишечника и восполняет рацион пищевыми волокнами.</p>
+          <p style="text-align: center;"><img src="img/fajboleks_3.jpg" alt="#" style="max-width: 455px;"></p>
+          <p>Для производства <strong style="font-style: italic;">Файболекс</strong> одорожник яйцевидный выращивается на родине – в Индии, в естественной среде произростания. Благодаря этому, шелуха семян способна притягивать воду в 40 раз больше собственной массы и оказывать благоприятные эффекты на организм человека: способствует нормализации работы кишечника, стимуляции перистальтики и избавлению от запора, выведению токсических веществ из организма, а также улучшению состояния микрофлоры кишечника.</p>
+          <hr>
+          <p>Кроме шелухи семян подорожника, в состав <strong style="font-style: italic;">Файболекс</strong> входят натуральные волокна пшеницы и экстракт зеленого чая. Волокна пшеницы – источник клетчатки, которая стимулирует двигательную активность кишечника. Экстракт зеленого чая обладает антиоксидантным и общетонизирующим действие на организм.</p>
+          <hr>
+          <p><strong style="font-style: italic;">Файболекс</strong> – это не обычное слабительное. Это натуральное средство для нормализации работы кишечника. Файболекс – просто, как глоток воды!</p>
+          <hr>
+          <p>Способ применения <strong style="font-style: italic;">Файболекс</strong> очень прост и удобен: по 1 пакетику 2-3 раза в день. Пакетик нужно развести в стакане воды до однородной массы, выпить и при возможности запить еще стаканом воды. Не принимайте Файболекс перед тем как собираетесь прилечь. Рекомендованный курс приема 7-14 дней.</p>
+          <hr>
+          <p>Применяя <strong style="font-style: italic;">Файболекс</strong> вашему организму помогает сама природа!</p>
+          <p>Диетическая добавка, не является лекарственным средством. В случае необходимости проконсультируйтесь с врачом. Перед применением ознакомьтесь с инструкцией. <a href="#"> пример ссылки внутри p </a></p>
+          <hr>
+          <h4>Симптомы гонореи</h4>
+          <p>Симптомы гонореи <strong>у мужчин:</strong></p>
+          <ul>
+            <li>желтовато-белые выделения из мочеиспускательного канала;</li>
+            <li>боль при мочеиспускании.</li>
+          </ul>
+          <p>Симптомы гонореи <strong>у женщин:</strong></p>
+          <ul>
+            <li>желтовато-белые выделения из влагалища;</li>
+            <li>боль при мочеиспускании;</li>
+            <li>межменструальные кровотечения;</li>
+            <li>боль внизу живота</li>
+          </ul>
+          <ol>
+            <li>Пример <strong>нумерованного</strong> списка</li>
+            <li>Пример <strong>нумерованного</strong> списка</li>
+            <li>Пример <strong>нумерованного</strong> списка</li>
+            <li>Пример <strong>нумерованного</strong> списка</li>
+          </ol>
+          <table>
+            <tr>
+              <td style="max-width: 300px;">
+                <h4 style="text-align: center;">НЕЛЬЗЯ</h4>
+                <ul>
+                  <li>Есть соленую, острую, жирную пищу.</li>
+                  <li>Набирать лишние килограммы.</li>
+                  <li>Злоупотреблять спиртным, особенно совмещать прием алкоголя с приемом лекарств.</li>
+                  <li>Работать ночами, спать менее 7 часов.</li>
+                  <li>Нервничать по пустякам.</li>
+                  <li>Вести малоподвижный образ жизни.</li>
+                  <li>Курить.</li>
+                  <li>Пропускать или прекращать прием лекарств, назначенных врачом.</li>
+                </ul>
+              </td>
+              <td style="max-width: 300px;">
+                <h4 style="text-align: center;">НЕЛЬЗЯ</h4>
+                <ul>
+                  <li>Есть соленую, острую, жирную пищу.</li>
+                  <li>Набирать лишние килограммы.</li>
+                  <li>Злоупотреблять спиртным, особенно совмещать прием алкоголя с приемом лекарств.</li>
+                  <li>Работать ночами, спать менее 7 часов.</li>
+                  <li>Нервничать по пустякам.</li>
+                  <li>Вести малоподвижный образ жизни.</li>
+                  <li>Курить.</li>
+                  <li>Пропускать или прекращать прием лекарств, назначенных врачом.</li>
+                </ul>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="container">
+        <div class="share-block">
+          <div class="share-block__text">поделиться:
+          </div>
+          <div class="share-block__soc-block"><a class="share-block__link" href="#"><img class="share-block__soc-image" src="img/facebook.png" alt="#" title=""/></a><a class="share-block__link" href="#"><img class="share-block__soc-image" src="img/vk.png" alt="#" title=""/></a><a class="share-block__link" href="#"><img class="share-block__soc-image" src="img/ok.png" alt="#" title=""/></a><a class="share-block__link" href="#"><img class="share-block__soc-image" src="img/instagram.png" alt="#" title=""/></a>
+          </div>
+        </div>
+      </div>
+      <!-- start s-form-->
+      <div class="s-form section block-with-lazy" id="s-form">
+        <div class="container">
+          <div class="page-title form-title">
+            <div class="page-title__title">Задать вопрос
+            </div>
+          </div>
+          <div class="form-wrap">
+            <form>
+              <div class="row">
+                <div class="col-12 col-lg-4">
+                  <div class="form-wrap__input-wrap">
+                    <label><span class="form-wrap__title">ФИО *</span><input class="form-wrap__input" type="text" placeholder="" name="text"/>
+                    </label>
+                  </div>
+                  <!-- +e.input-wrap-->
+                </div>
+                <div class="col-12 col-lg-4">
+                  <div class="form-wrap__input-wrap">
+                    <label><span class="form-wrap__title">Ваш e-mail *</span><input class="form-wrap__input" type="text" placeholder="" name="text"/>
+                    </label>
+                  </div>
+                  <!-- +e.input-wrap-->
+                </div>
+                <div class="col-12 col-lg-4">
+                  <div class="form-wrap__input-wrap">
+                    <label><span class="form-wrap__title">Контактные телефоны</span><input class="form-wrap__input" type="text" placeholder="" name="text"/>
+                    </label>
+                  </div>
+                  <!-- +e.input-wrap-->
+                </div>
+              </div>
+              <div class="form-wrap__input-wrap">
+                <label><span class="form-wrap__title">Текст сообщения *</span><textarea class="form-wrap__input form-control" placeholder="" name="textarea"></textarea>
+                </label>
+              </div>
+              <!-- +e.input-wrap-->
+              <button class="btn-main form-btn" type="submit">Отправить</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- end s-form-->
+      <footer class="footer block-with-lazy second-font">
+        <div class="container">
+          <h5 class="footer__title">Контактная информация
+          </h5>
+          <div class="row">
+            <div class="footer__item col-12 col-xl-3">
+              <p><span>EU:</span> Suite 1, 2 Station Court, Imperial Wharf, Townmead Road, Fulham, London, SW6 2PY, United Kingdom</p>
+              <p>tel.: <a href="tel:+442073719666"> + 442073719666</a></p>
+              <p>e-mail: <a href="mailto:office@anantamedicare.co.uk">office@anantamedicare.co.uk</a></p>
+            </div>
+            <div class="footer__item col-12 col-xl-3">
+              <p><span>India:</span> 621, Ring Road Mall, Sector-3, Rohini, Delhi-110085, India,</p>
+              <p>tel.: <a href="tel:+911147050531"> + 911147050531</a></p>
+              <p>e-mail: <a href="mailto:info@anantamedicare.in">info@anantamedicare.in</a></p>
+            </div>
+            <div class="footer__item col-12 col-xl-3">
+              <p><span>CIS:</span> Ул. Искринская, 37, г. Харьков, Украина, 61001,</p>
+              <p>tel.: <a href="tel:+38(057)739-03-00"> +38 (057) 739-03-00</a></p>
+              <p>e-mail: <a href="mailto:office@anantamedicare.com">office@anantamedicare.com</a></p>
+            </div>
+            <div class="footer__item col-12 col-xl-3">
+              <div class="footer__soc-block"><a href="#"> <img class="footer__soc-img" src="img/facebook.png" alt="#" title=""/></a><a href="#"> <img class="footer__soc-img" src="img/vk.png" alt="#" title=""/></a><a href="#"> <img class="footer__soc-img" src="img/ok.png" alt="#" title=""/></a><a href="#"> <img class="footer__soc-img" src="img/instagram.png" alt="#" title=""/></a><a href="#"> <img class="footer__soc-img" src="img/google.png" alt="#" title=""/></a>
+              </div>
+            </div>
+          </div>
+          <div class="footer__copyright-block">
+            <p>Copyright © 2007 — 2019 Ananta Medicare Ltd. Все права защищены. Материалы, отмеченные знаком ® публикуются на правах рекламы <br>Разработка сайта - <a href="#">seozavr.com</a></p><a class="footer__feedback" href="mailto:beauty@anantamedicare.com">Обратная связь</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <!-- modal libs-->
+    <script src="libs/magnificPopup/jquery.magnific-popup.min.js"></script>
+    <!-- modal libs-->
+    <!-- slider libs-->
+    <script src="libs/slick/slick.min.js"></script>
+    <!-- /slider libs-->
+    <!-- for svg libs-->
+    <script src="libs/svg4everybody-master/svg4everybody.min.js"></script>
+    <!-- /for svg libs-->
+    <script src="libs/jquery.touchSwipe.min.js"></script>
+    <script src="libs/jquery.inputmask.bundle.min.js"></script>
+    <script src="libs/jquery.ddslick.min.js"></script>
+    <script src="js/common.js"></script>
+  </body>
+</html>

@@ -1,0 +1,70 @@
+extends layout/main.pug
+
+
+include ../blocks/s-content/_s-content.pug
+include ../blocks/s-contact/_s-contact.pug
+include ../blocks/s-slider/_s-slider.pug
+include ../blocks/s-about-company/_s-about-company.pug
+include ../blocks/s-news/_s-news.pug
+include ../blocks/s-meds/_s-meds.pug
+include ../blocks/s-information/_s-information.pug
+
+block title
+	title title
+
+block pagecontent
+	+mob-mnu()
+	+header()
+		+top-nav()
+	
+	.container
+		.title-page-block
+			+page-title("Вакансии в странах СНГ")
+		
+			+breadcrumb("Главная","Карьера","Вакансии в странах СНГ")
+		//- .title-page-block
+		//- 	+product-subtitle-img("К списку статей")
+		//- 	h2 Продукты
+	.container
+		.for-specialists-page.career
+			h3 Вакансии в странах СНГ
+			p(style="text-align: center;")
+				img.map-img(src="img/map_vacancy.gif" alt="#")
+			p(style="text-align:center;")
+				strong Ведущая компания «ANANTA Medicare» в связи с расширением приглашает Вас <br>принять участие в конкурсе на вакантную должность МЕДИЦИНСКОГО ПРЕДСТАВИТЕЛЯ в городах: Кировоград, Луцк,Черновцы, Полтава,Мариуполь, Ровно, Тернополь, Львов, Винница, Умань, Сумы, Одесса
+			p(style="text-align:center;")
+				strong И РЕГИОНАЛЬНОГО МЕНЕДЖЕРА в городах: Одесса, Львов, Киев, Днепропетровск
+			p
+				strong(style="font-style: italic;") Основные требования:
+			ul.career-list
+				li медицинское/фармацевтическое образование
+				li опыт работы медицинским представителем
+				li хорошие коммуникативные навыки
+				li ответственность и готовность работать на результат
+				li знание фармацевтического рынка региона
+			p
+				strong(style="font-style: italic;") Компания предлагает:
+			ul.career-list
+				li официальное трудоустройство
+				li достойную заработную плату+ бонусы
+				li компенсационный пакет и систематическое обучение
+				li мобильную связь
+				li социальные гарантии
+				li перспективы карьерного роста
+			p
+				<strong style="font-style: italic;"> Обязанности:</strong> продвижение лекарственных препаратов компании на фармацевтическом рынке, формирование спроса на лекарственные препараты компании и выполнение индивидуального плана продаж.
+			p Резюме с  указанием в теме сообщения должности и города будут рассмотрены в первую очередь
+			p Резюме отправлять по адресу hr@ananta.com.ua
+			p Тел. 050-3000-573
+			//- p(style="text-align: right")
+			//- 	a(href="assets/files/ru/anantavati-reprint_rus.pdf") читать далее....
+				
+	+share-block()
+	//- +s-form()
+	//- +s-slider()
+	//- +s-about-company()
+	//- +s-news()
+	//- +s-meds()
+	//- +s-information()
+	+footer()
+
