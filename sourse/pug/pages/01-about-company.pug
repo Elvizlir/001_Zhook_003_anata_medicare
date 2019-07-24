@@ -10,7 +10,7 @@ include ../blocks/s-meds/_s-meds.pug
 include ../blocks/s-information/_s-information.pug
 
 block title
-	title title
+	title О компании
 
 block pagecontent
 	+mob-mnu()
@@ -27,7 +27,8 @@ block pagecontent
 			p(style="text-align: center;") <strong>Девиз компании: «Бесконечная забота о Вашем здоровье»</strong> 
 			<br>
 			p(style="text-align: center;")
-				<iframe src="https://www.youtube.com/embed/0aqS77uCkps" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				.video-wrap
+					<iframe src="https://www.youtube.com/embed/0aqS77uCkps" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			p
 				b ПРОФИЛЬ КОМПАНИИ
 			p

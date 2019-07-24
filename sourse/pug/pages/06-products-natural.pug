@@ -10,7 +10,7 @@ include ../blocks/s-meds/_s-meds.pug
 include ../blocks/s-information/_s-information.pug
 
 block title
-	title title
+	title Средства природного происхождения
 
 block pagecontent
 	+mob-mnu()
@@ -27,7 +27,7 @@ block pagecontent
 	.container
 		.row
 			mixin product-col(i, t, s)
-				a.product-item.med-item.col-12.col-md-6.col-lg-4.col-xl-3(href="#")
+				a.product-item.med-item.col-12.col-sm-6.col-lg-4.col-xl-3(href="#")
 					img(src=i alt="#")
 					h5=t
 					span=s

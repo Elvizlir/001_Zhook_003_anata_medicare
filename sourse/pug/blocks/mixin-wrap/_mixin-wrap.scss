@@ -171,6 +171,13 @@
 		font-weight: normal;
 		line-height: rem(32);
 		margin: rem(32) 0;
+		@include media-breakpoint-down(md){
+			font-size: rem(25);
+		}
+		@include media-breakpoint-down(sm){
+			line-height: rem(25);
+			font-size: rem(20);
+		}
 	}
 	p{
 		margin-bottom: rem(5);

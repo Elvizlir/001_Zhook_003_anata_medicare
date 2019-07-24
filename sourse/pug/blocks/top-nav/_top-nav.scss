@@ -272,6 +272,7 @@
 $h: em(2);
 
 .toggle-menu-mobile {
+	background-color: #fff;
 	display: block;
 	height: $h* 14;
 	margin-top: 15px;
@@ -279,7 +280,7 @@ $h: em(2);
 	position: fixed;
 	z-index: 999 !important;
 	right: rem(5);
-	padding: 3px;
+	padding: 4px 3px 3px; 
 	border-radius: 5px;
 	top: $h;
 
@@ -350,6 +351,14 @@ $h: em(2);
 		overflow-y: auto;
 		-webkit-overflow-scrolling: touch;
 		height: 100%;
+	}
+	&__soc{
+		margin-left: rem(15);
+	}
+	&__soc-link{
+		&:not(:last-child){
+			margin-right: rem(20);
+		}
 	}
 
 	&.active {
